@@ -1,0 +1,119 @@
+---
+import CardLayout from "./cardLayout.astro";
+---
+
+<CardLayout title="small" hrefname="small">
+  <div class="small"></div>
+</CardLayout>
+
+<style>
+  .small {
+    width: 30rem;
+    height: 30rem;
+    position: relative;
+    margin: 0 auto;
+  }
+
+  .small::before {
+    content: "";
+    width: 30rem;
+    height: 30rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background:
+    
+    /*nose*/
+      linear-gradient(140deg, black 50%, transparent 50.5%) 51% 40% / 0.6rem
+        0.6rem,
+      linear-gradient(-140deg, black 50%, transparent 50.5%) 49% 40% / 0.6rem
+        0.6rem,
+      /*nose whiskers*/
+        radial-gradient(
+          ellipse at top,
+          sandybrown 40%,
+          black 50%,
+          transparent 50.5%
+        )
+        47.5% 42% / 2rem 1rem,
+      /*nose whiskers*/
+        radial-gradient(
+          ellipse at top,
+          sandybrown 40%,
+          black 50%,
+          transparent 50.5%
+        )
+        52.5% 42% / 2rem 1rem,
+      /*teeth*/ linear-gradient(white, white) 49% 43% / 0.5rem 1rem,
+      linear-gradient(white, white) 51% 43% / 0.5rem 1rem,
+      /*eyeballs left*/ radial-gradient(circle, white 50%, transparent 50.5%)
+        43% 35% / 0.5rem 0.8rem,
+      /*eyeballs left*/ radial-gradient(circle, white 50%, transparent 50.5%)
+        45% 36.5% / 0.3rem 0.5rem,
+      /*eye left*/ radial-gradient(circle, black 50%, transparent 50.5%) 44% 35% /
+        1rem 1.8rem,
+      /*eyeballs left*/ radial-gradient(circle, white 50%, transparent 50.5%)
+        55% 35% / 0.5rem 0.8rem,
+      /*eyeballs left*/ radial-gradient(circle, white 50%, transparent 50.5%)
+        56.8% 36.5% / 0.3rem 0.5rem,
+      /*eye right*/ radial-gradient(circle, black 50%, transparent 50.5%) 56%
+        35% / 1rem 1.8rem,
+      /*whiskers*/
+        linear-gradient(15deg, transparent 45%, black 47%, transparent 50%) 60%
+        42% / 2rem 2rem,
+      linear-gradient(155deg, transparent 45%, black 47%, transparent 50%) 60%
+        38% / 2rem 2rem,
+      linear-gradient(180deg, transparent 45%, black 47%, transparent 50%) 60%
+        40.5% / 2rem 2rem,
+      linear-gradient(-15deg, transparent 45%, black 47%, transparent 50%) 40%
+        42% / 2rem 2rem,
+      linear-gradient(-155deg, transparent 45%, black 47%, transparent 50%) 40%
+        38% / 2rem 2rem,
+      linear-gradient(180deg, transparent 45%, black 47%, transparent 50%) 40%
+        40.5% / 2rem 2rem,
+      /*Face*/ radial-gradient(ellipse, sandybrown 50%, transparent 50%) 50.5%
+        30% / 9.8rem 10rem,
+      radial-gradient(ellipse, black 50%, transparent 50%) 50% 30% / 10rem 10rem,
+      /*ear left*/ radial-gradient(ellipse, pink 50%, transparent 50%) 40.5% 22% /
+        4rem 4rem,
+      radial-gradient(ellipse, sandybrown 50%, transparent 50%) 39.1% 19% / 6rem
+        6rem,
+      radial-gradient(ellipse, black 50%, transparent 50%) 39.5% 19% / 6rem 6rem,
+      /*ear right*/ radial-gradient(ellipse, pink 50%, transparent 50%) 60% 22% /
+        4rem 4rem,
+      radial-gradient(ellipse, sandybrown 50%, transparent 50%) 60.5% 19% /
+        5.7rem 6rem,
+      radial-gradient(ellipse, black 50%, transparent 50%) 60.5% 19% / 6rem 6rem,
+      /*hand*/
+        radial-gradient(
+          ellipse at 10px 20px,
+          sandybrown 47%,
+          black 48.5%,
+          black 50%,
+          transparent 50.5%
+        )
+        45% 55% / 4rem 3rem,
+      radial-gradient(
+          ellipse at 60px 20px,
+          sandybrown 47%,
+          black 48.5%,
+          black 50%,
+          transparent 50.5%
+        )
+        55% 55% / 4rem 3rem,
+      /*body*/ radial-gradient(ellipse, pink 50%, transparent 50.5%) 50% 60% /
+        8rem 10rem,
+      radial-gradient(ellipse, sandybrown 50%, transparent 50.5%) 49.5% 60% /
+        12.9rem 14rem,
+      radial-gradient(ellipse, black 50%, transparent 50.5%) 50% 60% / 13rem
+        13rem,
+      /*feet*/
+        radial-gradient(ellipse at bottom, sandybrown 50%, transparent 50.5%)
+        69% 69% / 8rem 3rem,
+      radial-gradient(ellipse at bottom, sandybrown 50%, transparent 50.5%)
+        31.5% 69% / 7.8rem 3rem,
+      radial-gradient(ellipse at bottom, black 50%, transparent 50.5%) 31% 69% /
+        8rem 3rem;
+    background-repeat: no-repeat;
+  }
+</style>

@@ -1,0 +1,257 @@
+---
+import CardLayout from "./cardLayout.astro";
+---
+
+<CardLayout title="lost" hrefname="lost">
+  <div class="lost"></div>
+</CardLayout>
+
+<style>
+  .lost {
+    margin: 0px auto;
+    position: relative;
+    width: 25rem;
+    height: 20rem;
+    border: 1px solid black;
+    top: 0;
+    left: 0;
+    content: "";
+    background:
+    
+                     /*stem*/
+      linear-gradient(#000, #000) 80% 100% / 0.8rem 7rem,
+      /*stem*/ linear-gradient(#000, #000) 87% 5% / 0.5rem 7.2rem,
+      /*left branch*/
+        linear-gradient(
+          105deg,
+          transparent 40%,
+          #000 40.5%,
+          #000 50%,
+          transparent 50.5%
+        )
+        98% 20% / 4rem 4rem,
+      /*right branch*/
+        linear-gradient(
+          50deg,
+          transparent 40%,
+          #000 40.5%,
+          #000 50%,
+          transparent 50.5%
+        )
+        78% 59% / 4em 4rem,
+      /*left branch*/
+        linear-gradient(
+          105deg,
+          transparent 40%,
+          #000 40.5%,
+          #000 50%,
+          transparent 50.5%
+        )
+        98.5% 45% / 6.3rem 4rem,
+      /*left branch*/
+        linear-gradient(
+          115deg,
+          transparent 40%,
+          #000 40.5%,
+          #000 50%,
+          transparent 50.5%
+        )
+        95% 62% / 7rem 2rem,
+      /********Tree 1 bg ***************/ /*stem*/ linear-gradient(#000, #000)
+        20% 100% / 1rem 14rem,
+      /*stem*/ linear-gradient(#000, #000) 20% 0% / 1rem 15rem,
+      /*left branch*/
+        linear-gradient(
+          115deg,
+          transparent 40%,
+          #000 40.5%,
+          #000 50%,
+          transparent 50.5%
+        )
+        25% 10% / 2rem 10rem,
+      /*right branch*/
+        linear-gradient(
+          45deg,
+          transparent 40%,
+          #000 40.5%,
+          #000 50%,
+          transparent 50.5%
+        )
+        12% 54% / 3rem 4rem,
+      /********Tree 4 bg ***************/ /*right branch*/
+        linear-gradient(
+          50deg,
+          transparent 40%,
+          dimgrey 40.5%,
+          dimgrey 50%,
+          transparent 50.5%
+        )
+        98% 70% / 3em 4rem,
+      /*right branch*/
+        linear-gradient(
+          50deg,
+          transparent 40%,
+          dimgrey 40.5%,
+          dimgrey 50%,
+          transparent 50.5%
+        )
+        97% 35% / 3em 4rem,
+      /*stem*/ linear-gradient(dimgrey, dimgrey) 98% 65% / 0.5rem 15rem,
+      /*right fig*/
+        linear-gradient(110deg, transparent 40%, dimgrey 40.5%, dimgrey 50%) 97%
+        43% / 0.5rem 10rem,
+      /*right fig*/
+        linear-gradient(110deg, transparent 40%, dimgrey 40.5%, dimgrey 50%)
+        100% 100% / 1rem 10rem,
+      /********Tree 3 bg ***************/ /*stem*/
+        linear-gradient(dimgrey, dimgrey) 70% 100% / 0.7rem 5rem,
+      /*stem*/ linear-gradient(dimgrey, dimgrey) 66% 40% / 0.5rem 5rem,
+      /*left branch*/
+        linear-gradient(
+          105deg,
+          transparent 40%,
+          dimgrey 40.5%,
+          dimgrey 50%,
+          transparent 50.5%
+        )
+        75% 45% / 5rem 4rem,
+      /*right branch*/
+        linear-gradient(
+          50deg,
+          transparent 40%,
+          dimgrey 40.5%,
+          dimgrey 50%,
+          transparent 50.5%
+        )
+        65.5% 60% / 3em 4rem,
+      /*right branch*/
+        linear-gradient(
+          50deg,
+          transparent 40%,
+          dimgrey 40.5%,
+          dimgrey 50%,
+          transparent 50.5%
+        )
+        65.5% 50% / 3em 3rem,
+      /*right branch*/
+        linear-gradient(
+          80deg,
+          transparent 40%,
+          dimgrey 40.5%,
+          dimgrey 50%,
+          transparent 50.5%
+        )
+        75.5% 69% / 6em 4rem,
+      /********Tree 2 bg *****/ /*stem*/ linear-gradient(dimgrey, dimgrey) 30%
+        100% / 1rem 10rem,
+      /*left branch*/
+        linear-gradient(
+          115deg,
+          transparent 40%,
+          dimgrey 40.5%,
+          dimgrey 50%,
+          transparent 50.5%
+        )
+        35% 24% / 4rem 10rem,
+      /*right branch*/
+        linear-gradient(
+          45deg,
+          transparent 40%,
+          dimgrey 40.5%,
+          dimgrey 50%,
+          transparent 50.5%
+        )
+        23% 44% / 3rem 4rem,
+      /********Tree one bg************/ /*stem*/
+        linear-gradient(dimgrey, dimgrey) 8.5% 10% / 1rem 20rem,
+      /*right branch*/
+        linear-gradient(
+          45deg,
+          transparent 40%,
+          dimgrey 40.5%,
+          dimgrey 50%,
+          transparent 50.5%
+        )
+        0% 0% / 3rem 4rem,
+      /*left branch*/
+        linear-gradient(
+          135deg,
+          transparent 40%,
+          dimgrey 40.5%,
+          dimgrey 50%,
+          transparent 50.5%
+        )
+        10% 0% / 3rem 4rem,
+      /*right fig*/
+        linear-gradient(110deg, transparent 40%, dimgrey 40.5%, dimgrey 50%) 8%
+        100% / 1rem 10rem,
+      /*left fig*/
+        linear-gradient(-110deg, transparent 40%, dimgrey 40.5%, dimgrey 50%)
+        10% 100% / 1rem 10rem,
+      /**background*/ radial-gradient(ellipse at bottom, grey 10%, black 50%);
+
+    background-repeat: no-repeat;
+  }
+
+  .lost::before {
+    --eyeball-color: white;
+
+    width: 10rem;
+    height: 10rem;
+    position: absolute;
+    bottom: 0;
+    left: 8rem;
+    content: "";
+    background:
+      radial-gradient(
+          ellipse at center,
+          var(--eyeball-color) 50%,
+          transparent 50%
+        )
+        10% 100% / 4rem 6rem,
+      radial-gradient(
+          ellipse at center,
+          var(--eyeball-color) 50%,
+          transparent 50%
+        )
+        50% 100% / 4rem 6rem;
+
+    background-repeat: no-repeat;
+    animation: blink 0.5s alternate 2 1s;
+  }
+
+  .lost::after {
+    width: 10rem;
+    height: 10rem;
+    position: absolute;
+    bottom: 0;
+    left: 8rem;
+    content: "";
+    background:
+      radial-gradient(ellipse at center, black 50%, transparent 50%) 15% 80% /
+        1rem 1rem,
+      radial-gradient(ellipse at center, black 50%, transparent 50%) 45% 80% /
+        1rem 1rem;
+
+    background-repeat: no-repeat;
+    animation: eyeball 1s alternate infinite;
+  }
+
+  @keyframes eyeball {
+    to {
+      background-position:
+        30% 80%,
+        60% 80%;
+    }
+  }
+
+  @keyframes blink {
+    0%,
+    100% {
+      --eyeball-color: white;
+    }
+    50% {
+      --eyeball-color: black;
+    }
+  }
+</style>

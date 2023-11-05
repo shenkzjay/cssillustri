@@ -1,0 +1,70 @@
+---
+import CardLayout from "./cardLayout.astro";
+---
+
+<CardLayout title="glass" hrefname="glass">
+  <div class="glass"></div>
+</CardLayout>
+
+<style>
+  .glass {
+    width: 30rem;
+    height: 30rem;
+    margin: 0px auto;
+    position: relative;
+  }
+
+  .glass::before {
+    width: 30rem;
+    height: 30rem;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 7rem;
+    background:
+    
+        /*left curve*/
+      radial-gradient(
+          ellipse at 70px 40px,
+          transparent 40%,
+          grey 50%,
+          transparent 50%
+        )
+        21% 31% / 10rem 11rem,
+      /*wine*/ radial-gradient(ellipse at 80px 0px, coral 50%, transparent 50%)
+        18% 40.5% / 10.3rem 7rem,
+      radial-gradient(
+          ellipse,
+          transparent 40%,
+          coral 40%,
+          coral 60%,
+          transparent 60.6%
+        )
+        18% 28.5% / 1.5rem 1.5rem,
+      radial-gradient(
+          ellipse,
+          transparent 40%,
+          coral 40%,
+          coral 70%,
+          transparent 70.6%
+        )
+        21.5% 29.5% / 0.8rem 0.8rem,
+      radial-gradient(
+          ellipse,
+          transparent 40%,
+          coral 40%,
+          coral 70%,
+          transparent 70.6%
+        )
+        23.7% 30% / 0.6rem 0.6rem,
+      /*stem*/ linear-gradient(90deg, grey 10%, transparent 50%, grey 90%) 27.8%
+        71% / 1.2rem 10rem,
+      /*bottom curve*/
+        radial-gradient(ellipse at bottom, lightgrey 50%, transparent 50%) 23.5%
+        81% / 6rem 0.3rem,
+      linear-gradient(transparent 10%, grey 90.5%) 25% 82% / 4.3rem 0.5rem
+        /*body*/
+        /*     linear-gradient(#e8f1f1, #e8f1f1) 25% 27% / 3rem 4.5rem */;
+    background-repeat: no-repeat;
+  }
+</style>

@@ -12,6 +12,10 @@ import Sticky from "../components/arts/sticky.astro";
 import Component from "../components/arts/component.astro";
 import Remember from "../components/arts/remember.astro";
 import Collect from "../components/arts/collect.astro";
+import Small from "../components/arts/small.astro";
+import Glass from "../components/arts/glass.astro";
+import Sparkle from "../components/arts/sparkle.astro";
+import Lost from "../components/arts/lost.astro";
 ---
 
 <Layout title="home">
@@ -55,6 +59,21 @@ import Collect from "../components/arts/collect.astro";
           <Space />
         </div>
       </section>
+      <section class="section8">
+        <div class="small"><Small /></div>
+        <div class="sparkle"><Sparkle /></div>
+        <div class="glass"><Glass /></div>
+      </section>
+
+      <!-- break -->
+      <section class="andmore">
+        <div class="">
+          <button>And more..</button>
+        </div>
+      </section>
+    </section>
+    <section class="section9">
+      <section class="lost"><Lost /></section>
     </section>
   </main>
 </Layout>
@@ -150,11 +169,57 @@ import Collect from "../components/arts/collect.astro";
     background-color: #010101;
   }
 
+  .section8 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    & div:first-child {
+      overflow: hidden;
+      background-color: purple;
+    }
+
+    & div:nth-child(2) {
+      overflow: hidden;
+      background-color: #060606;
+    }
+
+    & div:nth-child(3) {
+      overflow: hidden;
+    }
+  }
+
+  .andmore {
+    display: flex;
+    justify-content: center;
+    padding: 10vmin 0;
+
+    & div {
+      & button {
+        padding: 16px 30px;
+        background-color: bisque;
+        border: none;
+        color: brown;
+        font-weight: bold;
+        cursor: pointer;
+        border-radius: 30px;
+        font-size: 18px;
+      }
+    }
+  }
+
   .tangled {
     background-color: lightblue;
   }
 
+  .lost {
+    background-color: #010101;
+  }
+
   .section4 {
+    display: none;
+  }
+
+  .section9 {
     display: none;
   }
 
@@ -171,9 +236,17 @@ import Collect from "../components/arts/collect.astro";
   const btn = document.querySelector(".loadmore div button");
   const section = document.querySelector(".section4");
   const loadmore = document.querySelector(".loadmore");
+  const andmore = document.querySelector(".andmore");
+  const morebtn = document.querySelector(".andmore div button");
+  const moresection = document.querySelector(".section9");
 
   btn?.addEventListener("click", () => {
     section?.classList.add("show");
     loadmore?.classList.add("hidden");
+  });
+
+  morebtn?.addEventListener("click", () => {
+    moresection?.classList.add("show");
+    andmore?.classList.add("hidden");
   });
 </script>
