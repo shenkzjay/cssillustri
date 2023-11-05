@@ -1,0 +1,380 @@
+---
+import CardLayout from "./cardLayout.astro";
+---
+
+<CardLayout title="tangled" hrefname="tangled">
+  <div class="tangled"></div>
+</CardLayout>
+
+<style>
+  .tangled {
+    width: 40rem;
+    height: 45rem;
+    margin: 0px auto;
+    position: relative;
+  }
+
+  .tangled::before {
+    width: 30rem;
+    height: 30rem;
+    position: absolute;
+    top: 22rem;
+    transform: scale(2.3);
+    left: 4.5rem;
+    background:
+    
+
+    /*eyeballs*/
+      radial-gradient(ellipse, black 50%, transparent 50.5%) 55.5% 4% / 0.5rem
+        0.3rem,
+      /**eyes left**/
+        radial-gradient(ellipse at bottom, white 50%, transparent 50.5%) 43% 37% /
+        2.5rem 0.7rem,
+      /**eyes left**/
+        radial-gradient(ellipse at top, white 50%, transparent 50.5%) 43% 39.5% /
+        2.5rem 0.8rem,
+      /**eyes left shade**/
+        radial-gradient(
+          ellipse at bottom,
+          rgba(0, 139, 139, 0.5) 50%,
+          transparent 50.5%
+        )
+        43% 36% / 2.6rem 1rem,
+      /**eyes right**/
+        radial-gradient(ellipse at bottom, white 50%, transparent 50.5%) 57% 37% /
+        2.5rem 0.7rem,
+      /**eyes right**/
+        radial-gradient(ellipse at top, white 50%, transparent 50.5%) 57% 39.5% /
+        2.5rem 0.8rem,
+      /**eyes right shade**/
+        radial-gradient(
+          ellipse at bottom,
+          rgba(0, 139, 139, 0.5) 50%,
+          transparent 50.5%
+        )
+        57% 36% / 2.6rem 1rem,
+      /*Nose*/ linear-gradient(25deg, darkcyan 50%, transparent 50.5%) 51.2% 44% /
+        0.7rem 0.5rem,
+      linear-gradient(-25deg, darkcyan 50%, transparent 50.5%) 49% 44% / 0.7rem
+        0.5rem,
+      /**mouth top**/
+        radial-gradient(ellipse at bottom, crimson 50%, transparent 50.5%) 50%
+        48% / 3.1rem 0.7rem,
+      /**mouth bottom**/
+        radial-gradient(
+          ellipse at top,
+          transparent 40%,
+          crimson 50%,
+          transparent 50.5%
+        )
+        50% 51% / 3rem 0.7rem,
+      /*snake head top right*/
+        radial-gradient(
+          ellipse,
+          mediumturquoise 10%,
+          mediumturquoise 50%,
+          transparent 50.5%
+        )
+        55% 2.3% / 2.6rem 1.7rem,
+      /*snake head top right*/
+        radial-gradient(ellipse, red 40%, transparent 50.5%) 55% 2% / 3rem 2rem,
+      /*eyeballs left*/ radial-gradient(ellipse, black 50%, transparent 50.5%)
+        30% 12% / 0.3rem 0.5rem,
+      /*eyeballs left*/ radial-gradient(ellipse, black 50%, transparent 50.5%)
+        26.5% 12% / 0.3rem 0.5rem,
+      /*snake head left shade*/
+        radial-gradient(ellipse, mediumturquoise 50%, transparent 50.5%) 27.5%
+        9% / 2rem 3.5rem,
+      /*snake head left*/ radial-gradient(ellipse, red 40%, transparent 50.5%)
+        26.5% 9% / 2.5rem 3.5rem,
+      /*tongue*/ linear-gradient(black, black) 28.5% 5% / 0.1rem 2rem,
+      /*tongue*/
+        linear-gradient(45deg, transparent 42%, black 50%, transparent 50.5%)
+        27.5% 0.5% / 0.5rem 2rem,
+      /*tongue*/
+        linear-gradient(-45deg, transparent 42%, black 50%, transparent 50.5%)
+        29% 0.5% / 0.5rem 2rem,
+      /*sanke eyeballs left bottom*/
+        radial-gradient(ellipse, black 50%, transparent 50.5%) 41.5% 51% /
+        0.5rem 0.3rem,
+      /*snake head left bottom*/
+        radial-gradient(ellipse, mediumturquoise 50%, transparent 50.5%) 40.3%
+        51.8% / 2.6rem 1.7rem,
+      /*snake head left bottom*/
+        radial-gradient(ellipse, red 40%, transparent 50.5%) 40% 52% / 3rem 2rem,
+      /*sanke eyeballs right bottom*/
+        radial-gradient(ellipse, black 50%, transparent 50.5%) 58.5% 54% /
+        0.5rem 0.3rem,
+      /*snake head right bottom*/
+        radial-gradient(ellipse, mediumturquoise 50%, transparent 50.5%) 59.5%
+        54% / 2.6rem 1.7rem,
+      /*snake head right bottom*/
+        radial-gradient(ellipse, red 40%, transparent 50.5%) 60% 54% / 3rem 2rem,
+      /*tongue left middle**/ linear-gradient(black, black) 28.5% 5% / 0.1rem
+        2rem,
+      /*tongue left middle**/
+        linear-gradient(45deg, transparent 42%, black 50%, transparent 50.5%)
+        27.5% 0.5% / 0.5rem 2rem,
+      /*tongue left middle**/
+        linear-gradient(-45deg, transparent 42%, black 50%, transparent 50.5%)
+        29% 0.5% / 0.5rem 2rem,
+      /*sanke eyeballs left middle*/
+        radial-gradient(ellipse, black 50%, transparent 50.5%) 20.5% 36% /
+        0.5rem 0.3rem,
+      /*snake head left middle*/
+        radial-gradient(ellipse, mediumturquoise 50%, transparent 50.5%) 19.5%
+        35.5% / 2.6rem 1.7rem,
+      /*snake head left middle*/
+        radial-gradient(ellipse, red 40%, transparent 50.5%) 19.5% 35.5% / 3rem
+        2rem,
+      /*sanke eyeballs right middle*/
+        radial-gradient(ellipse, black 50%, transparent 50.5%) 76% 24.5% /
+        0.5rem 0.3rem,
+      /*snake head right middle*/
+        radial-gradient(ellipse, mediumturquoise 50%, transparent 50.5%) 76.3%
+        23.9% / 2.6rem 1.7rem,
+      /*snake head right middle*/
+        radial-gradient(ellipse, red 40%, transparent 50.5%) 76% 23.5% / 3rem
+        2rem,
+      /*tongue left middle**/ linear-gradient(black, black) 80% 25% / 2rem
+        0.1rem,
+      /*tongue left middle**/
+        linear-gradient(45deg, transparent 42%, black 50%, transparent 50.5%)
+        82.5% 24% / 0.5rem 2rem,
+      /*tongue left middle**/
+        linear-gradient(-45deg, transparent 42%, black 50%, transparent 50.5%)
+        82.5% 22% / 0.5rem 2rem,
+      /*sanke eyeballs center middle*/
+        radial-gradient(ellipse, black 50%, transparent 50.5%) 46% 31.5% /
+        0.5rem 0.3rem,
+      /*sanke eyeballs center middle*/
+        radial-gradient(ellipse, black 50%, transparent 50.5%) 50.5% 31.5% /
+        0.5rem 0.3rem,
+      /*snake head center high jaw*/
+        radial-gradient(
+          ellipse at bottom,
+          mediumturquoise 30%,
+          darkcyan 50%,
+          transparent 50.5%
+        )
+        48% 30.5% / 3rem 1rem,
+      /*tongue center middle**/ linear-gradient(black, black) 48.3% 33% / 0.1rem
+        2rem,
+      /*tongue center middle**/
+        linear-gradient(45deg, transparent 42%, black 50%, transparent 50.5%)
+        49% 37% / 0.5rem 2rem,
+      /*tongue cneter middle**/
+        linear-gradient(-45deg, transparent 42%, black 50%, transparent 50.5%)
+        47.7% 37% / 0.5rem 2rem,
+      /*snake head center low jaw*/
+        radial-gradient(
+          ellipse at top,
+          transparent 40%,
+          mediumturquoise 40%,
+          darkcyan 50%,
+          transparent 50.5%
+        )
+        48% 34.5% / 3rem 2rem,
+      /*snake center teeth*/
+        linear-gradient(115deg, white 50%, transparent 50.5%) 50% 33.5% / 0.5rem
+        0.8rem,
+      /*snake center teeth*/
+        linear-gradient(-115deg, white 50%, transparent 50.5%) 46.5% 33.5% /
+        0.5rem 0.8rem,
+      /*snake head center*/
+        radial-gradient(ellipse at bottom, crimson 50%, transparent 50.5%) 48%
+        32.5% / 2.2rem 0.8rem,
+      /*snake head center*/
+        radial-gradient(ellipse at top, crimson 50%, transparent 50.5%) 48%
+        34.5% / 2rem 1.5rem,
+      /*hair ring bottom*/
+        radial-gradient(
+          ellipse at 10px 0px,
+          transparent 30%,
+          mediumturquoise 30.5%,
+          red 50%,
+          transparent 50.5%
+        )
+        54.2% 30% / 4rem 3rem,
+      /*head top*/
+        radial-gradient(ellipse at top, mediumturquoise 50%, transparent 50.5%)
+        50% 50% / 10rem 8rem,
+      /*head bottom*/
+        radial-gradient(
+          ellipse at bottom,
+          mediumturquoise 50%,
+          transparent 50.5%
+        )
+        50% 25% / 10rem 5rem,
+      /*hair ring bottom*/
+        radial-gradient(
+          ellipse at left,
+          transparent 30%,
+          mediumturquoise 30.5%,
+          red 50%,
+          transparent 50.5%
+        )
+        66% 35% / 3rem 6rem,
+      /*hair ring bottom*/
+        radial-gradient(
+          circle at 40px 4px,
+          transparent 30%,
+          mediumturquoise 30.5%,
+          red 50%,
+          transparent 50.5%
+        )
+        28.5% 19% / 2rem 4.2rem,
+      linear-gradient(mediumturquoise, red) 34% 22.3% / 1rem 1rem,
+      /*hair ring bottom*/
+        radial-gradient(
+          ellipse at 50px 50px,
+          transparent 30%,
+          mediumturquoise 30.5%,
+          red 50%,
+          transparent 50.5%
+        )
+        34% 45% / 3rem 6rem,
+      /*hair ring bottom*/
+        radial-gradient(
+          ellipse at left,
+          transparent 30%,
+          mediumturquoise 30.5%,
+          red 50%,
+          transparent 50.5%
+        )
+        68% 48% / 4rem 6rem,
+      /*hair ring bottom*/
+        radial-gradient(
+          ellipse at 50px 10px,
+          transparent 30%,
+          mediumturquoise 30.5%,
+          red 50%,
+          transparent 50.5%
+        )
+        33% 34% / 3rem 6rem,
+      /*hair ring bottom*/
+        radial-gradient(
+          ellipse at 45px 0px,
+          transparent 30%,
+          mediumturquoise 30.5%,
+          red 50%,
+          transparent 50.5%
+        )
+        52.4% 24% / 3rem 6rem,
+      /*hair ring bottom*/
+        radial-gradient(
+          ellipse at 60px 10px,
+          transparent 30%,
+          mediumturquoise 30.5%,
+          red 50%,
+          transparent 50.5%
+        )
+        37% 30% / 3rem 6rem,
+      /*hair ring bottom*/
+        radial-gradient(
+          ellipse at 50px 50px,
+          transparent 30%,
+          mediumturquoise 30.5%,
+          red 50%,
+          transparent 50.5%
+        )
+        33% 35% / 3rem 6rem,
+      /*hair ring bottom*/
+        radial-gradient(
+          ellipse at 50px 50px,
+          transparent 30%,
+          red 30.5%,
+          mediumturquoise 50%,
+          transparent 50.5%
+        )
+        50% 1.1% / 3rem 6rem,
+      /*hair ring bottom*/
+        radial-gradient(
+          ellipse at 15px 50px,
+          transparent 30%,
+          mediumturquoise 30.5%,
+          red 50%,
+          transparent 50.5%
+        )
+        29% 36% / 6rem 3rem,
+      /*hair ring bottom*/
+        radial-gradient(
+          ellipse at bottom,
+          transparent 30%,
+          mediumturquoise 30.5%,
+          red 50%,
+          transparent 50.5%
+        )
+        50% 20% / 6rem 3rem,
+      /*hair ring bottom*/
+        radial-gradient(
+          ellipse at left,
+          transparent 30%,
+          mediumturquoise 30.5%,
+          red 50%,
+          transparent 50.5%
+        )
+        60% 16% / 3rem 6rem,
+      /*hair ring bottom*/
+        radial-gradient(
+          ellipse at 80px 50px,
+          transparent 30%,
+          mediumturquoise 30.5%,
+          red 50%,
+          transparent 50.5%
+        )
+        65% 24% / 6rem 4rem,
+      /*hair ring bottom*/
+        radial-gradient(
+          ellipse at 5px 20px,
+          transparent 30%,
+          mediumturquoise 30.5%,
+          red 50%,
+          transparent 50.5%
+        )
+        66% 31% / 3rem 6rem,
+      /*hair ring bottom*/
+        radial-gradient(
+          ellipse at 20px 50px,
+          transparent 30%,
+          red 30.5%,
+          mediumturquoise 50%,
+          transparent 50.5%
+        )
+        45% 20% / 6rem 3rem,
+      /*hair ring bottom*/
+        radial-gradient(
+          ellipse at 10px 100px,
+          transparent 30%,
+          mediumturquoise 30.5%,
+          red 50%,
+          transparent 50.5%
+        )
+        66% 38% / 3rem 6rem,
+      /*hair ring bottom*/
+        radial-gradient(
+          ellipse at bottom,
+          transparent 30%,
+          red 30.5%,
+          mediumturquoise 50%,
+          transparent 50.5%
+        )
+        43.9% 13% / 6.5rem 3rem,
+      /*hair ring bottom*/
+        radial-gradient(
+          ellipse at bottom,
+          transparent 30%,
+          mediumturquoise 30.5%,
+          red 50%,
+          transparent 50.5%
+        )
+        37.5% 20% / 6rem 3rem,
+      /*background fill*/ linear-gradient(mediumturquoise, mediumturquoise) 50%
+        24% / 2rem 1rem,
+      /*background fill*/ linear-gradient(mediumturquoise, mediumturquoise) 50%
+        35% / 8rem 1rem;
+
+    content: "";
+    background-repeat: no-repeat;
+  }
+</style>

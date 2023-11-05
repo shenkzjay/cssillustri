@@ -1,0 +1,217 @@
+---
+import CardLayout from "./cardLayout.astro";
+---
+
+<CardLayout title="alive" hrefname="alive">
+  <div class="alive"></div>
+</CardLayout>
+
+<style>
+  .alive {
+    width: 30rem;
+    height: 30rem;
+    position: relative;
+    margin: 0 auto;
+  }
+
+  .alive::before {
+    width: 30rem;
+    height: 30rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background:
+   
+                /*ventricles linear right*/
+      linear-gradient(
+          170deg,
+          transparent 25%,
+          darkcyan 25.5%,
+          darkcyan 50%,
+          transparent 50.5%
+        )
+        57% 42% / 5em 5rem,
+      radial-gradient(
+          ellipse at 100px 80px,
+          transparent 30%,
+          darkcyan 30%,
+          darkcyan 50%,
+          transparent 50.5%
+        )
+        48% 41.2% / 5rem 6rem,
+      /*ventricles linear*/
+        linear-gradient(
+          10deg,
+          transparent 25%,
+          darkcyan 25.5%,
+          darkcyan 50%,
+          transparent 50.5%
+        )
+        64% 39% / 2.5em 2rem,
+      /*ventricles linear*/
+        linear-gradient(
+          -15deg,
+          transparent 25%,
+          darkcyan 25.5%,
+          darkcyan 50%,
+          transparent 50.5%
+        )
+        64% 36.5% / 2.5em 2rem,
+      /*center curve head*/
+        radial-gradient(
+          ellipse at bottom,
+          transparent 20%,
+          crimson 20%,
+          crimson 50%,
+          transparent 50.5%
+        )
+        50% 30% / 10rem 5rem,
+      /*center curve head 2*/
+        radial-gradient(
+          ellipse at 0px 0px,
+          transparent 20%,
+          crimson 20%,
+          crimson 50%,
+          transparent 50.5%
+        )
+        40% 50% /5rem 5rem,
+      /*center linear head 3*/ linear-gradient(crimson, crimson) 59% 42% / 2rem
+        2rem,
+      /*center curve head 2*/
+        radial-gradient(
+          ellipse at 100px 100px,
+          transparent 20%,
+          crimson 20%,
+          crimson 50%,
+          transparent 50.5%
+        )
+        20% 47.7% /5rem 5rem,
+      /*ventricles linear left*/
+        linear-gradient(
+          -170deg,
+          transparent 25%,
+          darkcyan 25%,
+          darkcyan 50%,
+          transparent 50.5%
+        )
+        39.5% 42.3% / 4em 5rem,
+      /*ventricles linear*/
+        linear-gradient(
+          115deg,
+          transparent 25%,
+          crimson 25.5%,
+          crimson 50%,
+          transparent 50.5%
+        )
+        54% 28% / 3em 2.5rem,
+      /*ventricles linear*/
+        linear-gradient(
+          135deg,
+          transparent 25%,
+          crimson 25.5%,
+          crimson 50%,
+          transparent 50.5%
+        )
+        62% 31% / 3em 2rem,
+      /*ventricles curve*/
+        radial-gradient(
+          ellipse at 60px 60px,
+          transparent 30%,
+          crimson 30%,
+          crimson 50%,
+          transparent 50.5%
+        )
+        42% 23.7% / 3rem 4rem;
+    background-repeat: no-repeat;
+    content: "";
+  }
+
+  .alive::after {
+    content: "";
+    width: 30rem;
+    height: 30rem;
+    position: absolute;
+    top: 0;
+    left: -13px;
+    transform: rotate(-10deg);
+    animation: beats 1s linear infinite;
+    background:
+    
+   
+    
+        /*vien*/
+      linear-gradient(
+          95deg,
+          transparent 40%,
+          #db9ca5 40%,
+          #db9ca5 50%,
+          transparent 50.5%
+        )
+        45% 80% / 1rem 6.5rem,
+      /*vien*/
+        linear-gradient(
+          125deg,
+          transparent 40%,
+          #db9ca5 40%,
+          #db9ca5 50%,
+          transparent 50.5%
+        )
+        55% 73% / 2rem 2rem,
+      /*vien*/
+        linear-gradient(
+          115deg,
+          transparent 40%,
+          #db9ca5 40%,
+          #db9ca5 50%,
+          transparent 50.5%
+        )
+        44% 76% / 0.5rem 2rem,
+      /*vien*/
+        linear-gradient(
+          35deg,
+          transparent 40%,
+          #db9ca5 40%,
+          #db9ca5 50%,
+          transparent 50.5%
+        )
+        46.1% 70% / 0.5rem 2rem,
+      /*vien*/
+        linear-gradient(
+          35deg,
+          transparent 40%,
+          #db9ca5 40%,
+          #db9ca5 50%,
+          transparent 50.5%
+        )
+        45.5% 78% / 0.5rem 2rem,
+      radial-gradient(ellipse, lightpink 50%, transparent 50.5%) 29% 64% / 9em
+        10rem,
+      /*shade*/ radial-gradient(ellipse, #db9ca5 50%, transparent 50.5%) 27% 64% /
+        10em 10rem,
+      radial-gradient(ellipse, lightpink 50%, transparent 50.5%) 46% 67% / 9em
+        10rem,
+      radial-gradient(ellipse at top, lightpink 50%, transparent 50.5%) 35% 100% /
+        12em 10rem,
+      radial-gradient(ellipse at left, #db9ca5 50%, transparent 50.5%) 57% 67% /
+        5em 10rem,
+      /*               radial-gradient(ellipse at top, lightpink 50%, transparent 50.5%) 50% 88% / 5em 10rem, */
+        radial-gradient(ellipse at top, #db9ca5 50%, transparent 50.5%) 46% 91% /
+        10em 10rem,
+      radial-gradient(ellipse at top, lightpink 50%, transparent 50.5%) 30% 91% /
+        9em 10rem,
+      radial-gradient(ellipse at top, #db9ca5 50%, transparent 50.5%) 27% 91% /
+        10em 10rem;
+    background-repeat: no-repeat;
+  }
+
+  @keyframes beats {
+    0%,
+    100% {
+      transform: scale(1);
+    }
+
+    50% {
+      transform: scale(1.09);
+    }
+  }
+</style>

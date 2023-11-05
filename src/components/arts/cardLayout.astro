@@ -1,0 +1,15 @@
+---
+import Footer from "../footer.astro";
+
+interface Props {
+  title: string;
+  hrefname: string;
+}
+
+const { title, hrefname } = Astro.props;
+---
+
+<div>
+  <slot />
+  <Footer title={title} hrefname={hrefname} />
+</div>

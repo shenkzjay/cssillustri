@@ -1,0 +1,80 @@
+---
+import CardLayout from "./cardLayout.astro";
+---
+
+<CardLayout title="fake" hrefname="fake">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <div class="fake"></div>
+</CardLayout>
+
+<style>
+  .fake {
+    width: 30rem;
+    height: 30rem;
+    margin: 0 auto;
+    position: relative;
+
+    background:
+      linear-gradient(grey, grey) 50% 7% / 23rem 6rem,
+      /*left pic*/ linear-gradient(#c4c4c4, #c4c4c4) 12% 32.7% / 2.5rem 2.5rem,
+      /*left pic*/ linear-gradient(lightgrey, lightgrey) 12% 33% / 3rem 2.7rem,
+      /*left*/ repeating-linear-gradient(0deg, #a4a4c4 0 5%, transparent 0 15%)
+        15% 34% / 7rem 4rem,
+      linear-gradient(#c4c4c4, #c4c4c4) 15% 49.3% / 7rem 3rem,
+      /*left*/ repeating-linear-gradient(0deg, #a4a4c4 0 5%, transparent 0 15%)
+        15% 64% / 7rem 4rem,
+      /*middle*/ linear-gradient(#c4c4c4, #c4c4c4) 50% 35% / 7rem 4rem,
+      /*left*/ repeating-linear-gradient(0deg, #a4a4c4 0 2%, transparent 0 7%)
+        50% 55% / 7rem 9rem,
+      /*right*/ linear-gradient(#c4c4c4, #c4c4c4) 85% 59% / 7rem 7rem,
+      repeating-linear-gradient(0deg, #a4a4c4 0 5%, transparent 0 15%) 85% 35% /
+        7rem 4rem,
+      /*     linear-gradient(grey, grey) 20%
+ 13% / 8rem 6rem, */
+        linear-gradient(lightgrey, lightgrey) 50% 10% /25rem 20rem;
+    background-repeat: no-repeat;
+  }
+
+  .fake::before {
+    content: "CSS IS OVERRATED";
+    width: 30rem;
+    height: 30rem;
+    position: absolute;
+    font-size: 42px;
+    font-family: "oswald";
+    font-weight: bold;
+    top: 50px;
+    left: 78px;
+    background: radial-gradient(
+        ellipse,
+        transparent 30%,
+        red 30%,
+        red 50%,
+        transparent 50.5%
+      )
+      30% 25% / 10rem 10rem;
+    background-repeat: no-repeat;
+  }
+
+  .fake::after {
+    content: "FAKE NEWS!";
+    width: 30rem;
+    height: 30rem;
+    position: absolute;
+    top: 7rem;
+    font-family: "oswald", sans;
+    left: 15.7rem;
+    color: crimson;
+    font-size: 28px;
+    transform: rotate(-20deg);
+    background: linear-gradient(#c4c4c4, #c4c4c4) 0% 0.8% / 8.3rem 2.5rem;
+    background-repeat: no-repeat;
+  }
+</style>

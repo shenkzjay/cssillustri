@@ -1,0 +1,96 @@
+---
+import CardLayout from "./cardLayout.astro";
+---
+
+<CardLayout title="rules" hrefname="codepen">
+  <div class="rules"></div>
+</CardLayout>
+
+<style>
+  .rules {
+    --default: #575757;
+    --red: red;
+    --crimson: crimson;
+    --yellow: yellow;
+    --green: greenyellow;
+    --greenshade: #78b320;
+    --gold: gold;
+    width: 100vmin;
+    height: 100vmin;
+    margin: 0 auto;
+    position: relative;
+    background:
+    
+    /**traffic light head*/
+    /*headlight*/
+         /*shade*/
+      radial-gradient(ellipse, var(--red) 50%, transparent 50.5%) 50% 13% /
+        20vmin 20vmin,
+      radial-gradient(ellipse, var(--crimson) 50%, transparent 50.5%) 50% 10% /
+        23vmin 23vmin,
+      radial-gradient(var(--yellow) 50%, transparent 50.5%) 50% 35.8% / 20vmin
+        20vmin,
+      radial-gradient(var(--gold) 50%, transparent 50.5%) 50% 34% / 23vmin
+        23vmin,
+      radial-gradient(var(--green) 50%, transparent 50.5%) 50% 59% / 20vmin
+        20vmin,
+      radial-gradient(var(--greenshade) 50%, transparent 50.5%) 50% 58% / 23vmin
+        23vmin,
+      /*bars*/ linear-gradient(#000, #000) 50% 8.2% / 26vmin 0.8vmin,
+      /*bars*/ linear-gradient(#000, #000) 50% 67.7% / 26vmin 0.8vmin,
+      /*left shade*/ linear-gradient(#333, #333) 37.5% 24% / 3.5vmin 54vmin,
+      /*left shade*/
+        radial-gradient(ellipse at right, #333 50%, transparent 50.5%) 36.6%
+        7.3% / 5vmin 10vmin,
+      /*left sade*/
+        radial-gradient(ellipse at right, #333 50%, transparent 50.5%) 36.6% 66% /
+        5vmin 10vmin,
+      /*base*/ linear-gradient(#333, #333) 50% 20% / 25vmin 60vmin,
+      /*left*/ linear-gradient(#000, #000) 35.5% 24% / 3.5vmin 54vmin,
+      /*left*/ radial-gradient(ellipse at right, #000 50%, transparent 50.5%)
+        34.5% 7.3% / 5vmin 10vmin,
+      /*left*/ radial-gradient(ellipse at right, #000 50%, transparent 50.5%)
+        34.5% 66.1% / 5vmin 10vmin,
+      /*right shade*/ linear-gradient(#333, #333) 62.2% 25% / 5vmin 54vmin,
+      /*right shade*/
+        radial-gradient(ellipse at left, #333 50%, transparent 50.5%) 63.7% 7.3% /
+        5vmin 10vmin,
+      /*right shade*/
+        radial-gradient(ellipse at left, #333 50%, transparent 50.5%) 63.7% 66% /
+        5vmin 10vmin,
+      /*right*/ linear-gradient(#000, #000) 64.2% 25% / 5vmin 54vmin,
+      /*right*/ radial-gradient(ellipse at left, #000 50%, transparent 50.5%)
+        65.7% 7.3% / 5vmin 10vmin,
+      /*right*/ radial-gradient(ellipse at left, #000 50%, transparent 50.5%)
+        65.8% 66% / 5vmin 10vmin,
+      linear-gradient(#616161, #616161) 50% 6.4% / 20vmin 2vmin,
+      linear-gradient(#333, #333) 50% 6.4% / 20vmin 2vmin,
+      linear-gradient(#000, #000) 50% 80% / 10vmin 40vmin,
+      linear-gradient(#333, #333) 49.7% 5% / 15vmin 2vmin;
+    background-repeat: no-repeat;
+    animation: blink 5s 500ms linear infinite;
+  }
+
+  @keyframes blink {
+    0% {
+      --yellow: #575757;
+      --green: #575757;
+      --greenshade: #575757;
+      --gold: #575757;
+    }
+    40% {
+      --crimson: #575757;
+      --red: #575757;
+      --green: #575757;
+      --greenshade: #575757;
+      --yellow: yellow;
+      --gold: gold;
+    }
+    100% {
+      --crimson: #575757;
+      --red: #575757;
+      --yellow: #575757;
+      --gold: #575757;
+    }
+  }
+</style>

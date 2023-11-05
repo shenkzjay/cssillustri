@@ -1,0 +1,127 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Witchy from "../components/arts/witchy.astro";
+import Rules from "../components/arts/rules.astro";
+import Feast from "../components/arts/feast.astro";
+import Alive from "../components/arts/alive.astro";
+import Fake from "../components/arts/fake.astro";
+import Seeing from "../components/arts/seeing.astro";
+import Tangled from "../components/arts/tangled.astro";
+---
+
+<Layout title="home">
+  <main>
+    <section class="section1">
+      <div><Witchy /></div>
+    </section>
+
+    <section class="section2">
+      <div><Rules /></div>
+      <div><Feast /></div>
+    </section>
+
+    <section class="section3">
+      <div><Seeing /></div>
+      <div><Alive /></div>
+      <div><Fake /></div>
+    </section>
+
+    <!-- break -->
+    <section class="loadmore">
+      <div class="">
+        <button>Load more</button>
+      </div>
+    </section>
+
+    <section class="section4">
+      <section class="tangled"><Tangled /></section>
+    </section>
+  </main>
+</Layout>
+
+<style>
+  .section1 > div {
+    background-color: black;
+    z-index: -999;
+  }
+
+  .section2 {
+    display: flex;
+
+    & div:first-child {
+      width: 50%;
+      overflow: hidden;
+    }
+
+    & div:nth-child(2) {
+      width: 50%;
+      overflow: hidden;
+      background-color: lightcyan;
+    }
+  }
+
+  .section3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    & div:first-child {
+      overflow: hidden;
+    }
+
+    & div:nth-child(2) {
+      background-color: bisque;
+      overflow: hidden;
+    }
+
+    & div:nth-child(3) {
+      background-color: lightgray;
+      overflow: hidden;
+    }
+  }
+
+  .loadmore {
+    display: flex;
+    justify-content: center;
+    padding: 10vmin 0;
+
+    & div {
+      & button {
+        padding: 16px 30px;
+        background-color: bisque;
+        border: none;
+        color: brown;
+        font-weight: bold;
+        cursor: pointer;
+        border-radius: 30px;
+        font-size: 18px;
+      }
+    }
+  }
+
+  .tangled {
+    background-color: lightblue;
+  }
+
+  .section4 {
+    display: none;
+  }
+
+  .show {
+    display: block;
+  }
+
+  .hidden {
+    display: none;
+  }
+</style>
+
+<script>
+  const btn = document.querySelector(".loadmore div button");
+  const section = document.querySelector(".section4");
+  const loadmore = document.querySelector(".loadmore");
+
+  btn?.addEventListener("click", () => {
+    section?.classList.add("show");
+    loadmore?.classList.add("hidden");
+  });
+</script>
