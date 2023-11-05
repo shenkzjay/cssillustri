@@ -1,0 +1,89 @@
+---
+import CardLayout from "./cardLayout.astro";
+---
+
+<CardLayout title="component" hrefname="component">
+  <div class="component"></div>
+</CardLayout>
+
+<style>
+  .component {
+    width: 30rem;
+    height: 30rem;
+    position: relative;
+    margin: 0 auto;
+  }
+
+  .component::before {
+    width: 30rem;
+    height: 30rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    background:
+      radial-gradient(ellipse, coral 10%, red 50%, transparent 50.5%) 80% 50% /
+        3rem 3rem,
+      radial-gradient(ellipse, cyan 10%, purple 50%, transparent 50.5%) 57% 60% /
+        3rem 3rem,
+      radial-gradient(ellipse, coral 10%, red 50%, transparent 50.5%) 64% 60% /
+        3rem 3rem,
+      radial-gradient(ellipse, coral 10%, red 50%, transparent 50.5%) 60% 40% /
+        3rem 3rem,
+      radial-gradient(ellipse, coral 10%, red 50%, transparent 50.5%) 40% 50% /
+        3rem 3rem,
+      radial-gradient(ellipse, cyan 10%, purple 50%, transparent 50.5%) 20% 60% /
+        3rem 3rem,
+      radial-gradient(ellipse, cyan 10%, purple 50%, transparent 50.5%) 20% 40% /
+        3rem 3rem,
+      linear-gradient(
+          -33deg,
+          transparent 45%,
+          coral 45%,
+          red 50%,
+          transparent 50.5%
+        )
+        75% 54% / 6rem 3.5rem,
+      linear-gradient(
+          33deg,
+          transparent 45%,
+          red 45%,
+          coral 50%,
+          transparent 50.5%
+        )
+        75% 45% / 6rem 3.5rem,
+      linear-gradient(
+          -29deg,
+          transparent 45%,
+          coral 45%,
+          red 50%,
+          transparent 50.5%
+        )
+        29% 54% / 6rem 4rem,
+      linear-gradient(
+          29deg,
+          transparent 45%,
+          coral 45%,
+          red 50%,
+          transparent 50.5%
+        )
+        29% 45% / 6rem 4rem,
+      linear-gradient(
+          -29deg,
+          transparent 45%,
+          coral 45%,
+          red 50%,
+          transparent 50.5%
+        )
+        50% 43% / 6rem 4rem,
+      linear-gradient(
+          29deg,
+          transparent 45%,
+          red 45%,
+          coral 50%,
+          transparent 50.5%
+        )
+        50% 55% / 6rem 4rem;
+    background-repeat: no-repeat;
+  }
+</style>

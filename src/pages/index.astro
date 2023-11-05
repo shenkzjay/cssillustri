@@ -7,6 +7,11 @@ import Alive from "../components/arts/alive.astro";
 import Fake from "../components/arts/fake.astro";
 import Seeing from "../components/arts/seeing.astro";
 import Tangled from "../components/arts/tangled.astro";
+import Space from "../components/arts/space.astro";
+import Sticky from "../components/arts/sticky.astro";
+import Component from "../components/arts/component.astro";
+import Remember from "../components/arts/remember.astro";
+import Collect from "../components/arts/collect.astro";
 ---
 
 <Layout title="home">
@@ -35,6 +40,21 @@ import Tangled from "../components/arts/tangled.astro";
 
     <section class="section4">
       <section class="tangled"><Tangled /></section>
+      <section class="section5">
+        <div><Collect /></div>
+        <div><Sticky /></div>
+      </section>
+
+      <section class="section6">
+        <div><Component /></div>
+        <div><Remember /></div>
+      </section>
+
+      <section class="section7">
+        <div>
+          <Space />
+        </div>
+      </section>
     </section>
   </main>
 </Layout>
@@ -96,6 +116,38 @@ import Tangled from "../components/arts/tangled.astro";
         font-size: 18px;
       }
     }
+  }
+
+  .section5 {
+    display: flex;
+
+    & div:first-child {
+      width: 50%;
+      background-color: salmon;
+    }
+
+    & div:nth-child(2) {
+      width: 50%;
+      background-color: #010101;
+    }
+  }
+
+  .section6 {
+    display: flex;
+
+    & div:first-child {
+      width: 50%;
+      background-color: bisque;
+    }
+
+    & div:nth-child(2) {
+      width: 50%;
+      background-color: mediumaquamarine;
+    }
+  }
+
+  .section7 {
+    background-color: #010101;
   }
 
   .tangled {

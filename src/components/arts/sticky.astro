@@ -1,0 +1,226 @@
+---
+import CardLayout from "./cardLayout.astro";
+---
+
+<CardLayout title="sticky" hrefname="sticky">
+  <div class="sticky"></div>
+</CardLayout>
+
+<style>
+  .sticky {
+    width: 30rem;
+    height: 30rem;
+    position: relative;
+    margin: 0 auto;
+  }
+
+  .sticky::before {
+    width: 30rem;
+    height: 30rem;
+    position: absolute;
+    border: 1px solid black;
+    top: 0;
+    left: 0;
+    content: "";
+    background:
+      linear-gradient(-45deg, transparent 50%, white 50%, transparent 50.5%) 50%
+        50% / 20rem 20rem,
+      linear-gradient(45deg, transparent 50%, white 50%, transparent 50.5%) 50%
+        50% / 15rem 15rem,
+      linear-gradient(180deg, white 50%, transparent 50.5%) 50% 50% / 20rem
+        0.2rem,
+      linear-gradient(90deg, white 50%, transparent 50.5%) 50% 50% / 0.2rem
+        20rem,
+      /*3rd spiral*/
+        radial-gradient(
+          ellipse at 80% 10%,
+          transparent 48%,
+          white 50%,
+          transparent 50.5%
+        )
+        61.5% 20% / 9.3rem 4rem,
+      radial-gradient(
+          ellipse at 19% 10%,
+          transparent 48%,
+          white 50%,
+          transparent 50.5%
+        )
+        38.5% 20% / 9.2rem 4rem,
+      /*2rd spiral*/
+        radial-gradient(
+          ellipse at 70% 5%,
+          transparent 48%,
+          white 50%,
+          transparent 50.5%
+        )
+        57.5% 30% / 6.2rem 4rem,
+      radial-gradient(
+          ellipse at 10% 10%,
+          transparent 48%,
+          white 50%,
+          transparent 50.5%
+        )
+        44.5% 30% / 5.6rem 4rem,
+      /*3rd spiral*/
+        radial-gradient(
+          ellipse at 35% 1%,
+          transparent 45%,
+          white 50%,
+          transparent 50.5%
+        )
+        46% 41% / 3.2rem 2rem,
+      radial-gradient(
+          ellipse at 70% 1%,
+          transparent 45%,
+          white 50%,
+          transparent 50.5%
+        )
+        53% 41% / 3.2rem 2rem,
+      /*1st spiral left*/
+        radial-gradient(
+          ellipse at 0% 30%,
+          transparent 47%,
+          white 50%,
+          transparent 50.5%
+        )
+        23.5% 37.5% / 3.2rem 8.9rem,
+      /*1st spiral right*/
+        radial-gradient(
+          ellipse at 100% 30%,
+          transparent 47%,
+          white 50%,
+          transparent 50.5%
+        )
+        76.7% 37.5% / 3.2rem 8.9rem,
+      /*2nd spiral left*/
+        radial-gradient(
+          ellipse at 0% 30%,
+          transparent 47%,
+          white 50%,
+          transparent 50.5%
+        )
+        33.4% 43.5% / 3.2rem 5.5rem,
+      /*3nd spiral left*/
+        radial-gradient(
+          ellipse at 5% 30%,
+          transparent 45%,
+          white 50%,
+          transparent 50.5%
+        )
+        40.8% 46.5% / 2rem 3rem,
+      /*2nd spiral right*/
+        radial-gradient(
+          ellipse at 100% 30%,
+          transparent 47%,
+          white 50%,
+          transparent 50.5%
+        )
+        68.4% 42.5% / 3.2rem 6.1rem,
+      /*3rd spiral*/
+        radial-gradient(
+          ellipse at 90% 30%,
+          transparent 45%,
+          white 50%,
+          transparent 50.5%
+        )
+        58.8% 46.5% / 2rem 3rem,
+      /*1st spiral bottom left*/
+        radial-gradient(
+          ellipse at 90% 70%,
+          transparent 45%,
+          white 50%,
+          transparent 50.5%
+        )
+        58.8% 53.2% / 2rem 2.9rem,
+      /*2nd spiral bottom left*/
+        radial-gradient(
+          ellipse at 100% 80%,
+          transparent 47%,
+          white 50%,
+          transparent 50.5%
+        )
+        68% 55.9% / 4rem 5.5rem,
+      /*3rd spiral bottom left*/
+        radial-gradient(
+          ellipse at 100% 70%,
+          transparent 47%,
+          white 50%,
+          transparent 50.5%
+        )
+        76.8% 61.5% / 4rem 8.5rem,
+      /*1st spiral bottom center*/
+        radial-gradient(
+          ellipse at 100% 100%,
+          transparent 47%,
+          white 50%,
+          transparent 50.5%
+        )
+        52% 59.5% / 3.2rem 2.6rem,
+      /*2nd spiral bottom center*/
+        radial-gradient(
+          ellipse at 100% 100%,
+          transparent 47%,
+          white 50%,
+          transparent 50.5%
+        )
+        55% 67.5% / 6rem 3.3rem,
+      /*3rd spiral bottom center*/
+        radial-gradient(
+          ellipse at 90% 100%,
+          transparent 47%,
+          white 50%,
+          transparent 50.5%
+        )
+        60% 78.5% / 9.1rem 4rem,
+      /*1st spiral bottom center*/
+        radial-gradient(
+          ellipse at 30% 100%,
+          transparent 46%,
+          white 50%,
+          transparent 50.5%
+        )
+        46.5% 59% / 3rem 2rem,
+      /*2st spiral bottom center*/
+        radial-gradient(
+          ellipse at 25% 100%,
+          transparent 47%,
+          white 50%,
+          transparent 50.5%
+        )
+        42.8% 68% / 6rem 3rem,
+      /*3st spiral bottom center*/
+        radial-gradient(
+          ellipse at 25% 100%,
+          transparent 48%,
+          white 50%,
+          transparent 50.5%
+        )
+        38.8% 78% / 8.5rem 4.5rem,
+      /*1st spiral bottom left*/
+        radial-gradient(
+          ellipse at 10% 70%,
+          transparent 46%,
+          white 50%,
+          transparent 50.5%
+        )
+        40% 53.5% / 2.3rem 3.2rem,
+      /*2nd spiral bottom left*/
+        radial-gradient(
+          ellipse at 10% 70%,
+          transparent 47%,
+          white 50%,
+          transparent 50.5%
+        )
+        33% 56.5% / 3rem 5.5rem,
+      /*2nd spiral bottom left*/
+        radial-gradient(
+          ellipse at 5% 70%,
+          transparent 48%,
+          white 50%,
+          transparent 50.5%
+        )
+        24% 61.2% / 4rem 8.3rem;
+
+    background-repeat: no-repeat;
+  }
+</style>
