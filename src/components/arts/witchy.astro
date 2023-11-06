@@ -221,4 +221,26 @@ import CardLayout from "./cardLayout.astro";
       transform: translateX(80%) translateY(-80px) scale(0.5);
     }
   }
+
+  @media screen and (max-width: 800px) {
+    @keyframes fly {
+      0% {
+        transform: translateX(-30%) translateY(30px) scale(0.5);
+      }
+      100% {
+        transform: translateX(30%) translateY(-30px) scale(0.5);
+      }
+    }
+
+    .witchy {
+      width: 100vmin;
+      height: 100vmin;
+      border: 1px solid black;
+      margin: 0 auto;
+      background: radial-gradient(ellipse, #e2e2e2 70%, transparent 70.5%) 50%
+        50% / 80% 80%;
+      background-repeat: no-repeat;
+      position: relative;
+    }
+  }
 </style>
