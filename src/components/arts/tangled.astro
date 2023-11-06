@@ -2,7 +2,10 @@
 import CardLayout from "./cardLayout.astro";
 ---
 
-<CardLayout title="tangled" hrefname="tangled">
+<CardLayout
+  title="tangled"
+  hrefname="https://codepen.io/Olajide-Seun/pen/ZEVdxMd"
+>
   <div class="tangled"></div>
 </CardLayout>
 
@@ -376,5 +379,18 @@ import CardLayout from "./cardLayout.astro";
 
     content: "";
     background-repeat: no-repeat;
+  }
+
+  @media screen and (max-width: 800px) {
+    .tangled::before {
+      transform: scale(1);
+      top: 4rem;
+      left: -3rem;
+    }
+
+    .tangled {
+      width: 100%;
+      height: 120vmin;
+    }
   }
 </style>

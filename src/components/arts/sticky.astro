@@ -2,7 +2,10 @@
 import CardLayout from "./cardLayout.astro";
 ---
 
-<CardLayout title="sticky" hrefname="sticky">
+<CardLayout
+  title="sticky"
+  hrefname="https://codepen.io/Olajide-Seun/pen/xxMKRxL"
+>
   <div class="sticky"></div>
 </CardLayout>
 
@@ -222,5 +225,11 @@ import CardLayout from "./cardLayout.astro";
         24% 61.2% / 4rem 8.3rem;
 
     background-repeat: no-repeat;
+  }
+
+  @media screen and (max-width: 800px) {
+    .sticky::before {
+      left: -3.5rem;
+    }
   }
 </style>

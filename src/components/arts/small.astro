@@ -2,7 +2,10 @@
 import CardLayout from "./cardLayout.astro";
 ---
 
-<CardLayout title="small" hrefname="small">
+<CardLayout
+  title="small"
+  hrefname="https://codepen.io/Olajide-Seun/pen/abPrLQg"
+>
   <div class="small"></div>
 </CardLayout>
 
@@ -115,5 +118,11 @@ import CardLayout from "./cardLayout.astro";
       radial-gradient(ellipse at bottom, black 50%, transparent 50.5%) 31% 69% /
         8rem 3rem;
     background-repeat: no-repeat;
+  }
+
+  @media screen and (max-width: 800px) {
+    .small::before {
+      left: -3rem;
+    }
   }
 </style>

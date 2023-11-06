@@ -2,7 +2,10 @@
 import CardLayout from "./cardLayout.astro";
 ---
 
-<CardLayout title="collect" hrefname="collect">
+<CardLayout
+  title="collect"
+  hrefname="https://codepen.io/Olajide-Seun/pen/yLGWOjq"
+>
   <div class="collect"></div>
 </CardLayout>
 
@@ -132,5 +135,16 @@ import CardLayout from "./cardLayout.astro";
         radial-gradient(ellipse at left, black 50%, transparent 50.5%) 18.5%
         34.2% / 0.8rem 1.8rem;
     background-repeat: no-repeat;
+  }
+
+  @media screen and (max-width: 800px) {
+    .collect {
+      width: 100%;
+      transform: scale(0.6);
+    }
+
+    .collect::before {
+      left: -8.5rem;
+    }
   }
 </style>

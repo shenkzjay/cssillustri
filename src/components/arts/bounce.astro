@@ -1,0 +1,259 @@
+---
+import CardLayout from "./cardLayout.astro";
+---
+
+<CardLayout
+  title="bounce"
+  hrefname="https://codepen.io/Olajide-Seun/pen/NWeejvJ"
+>
+  <div class="bounce"></div>
+</CardLayout>
+
+<style>
+  .bounce {
+    width: 30rem;
+    height: 30rem;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .bounce::before {
+    width: 30rem;
+    height: 30rem;
+    position: absolute;
+    top: 0;
+    background:
+    
+   
+     
+    /*door*/
+      linear-gradient(
+          -30deg,
+          transparent 37%,
+          sandybrown 35%,
+          sandybrown 50%,
+          transparent 50%
+        )
+        63% 63% / 3rem 39rem,
+      linear-gradient(
+          30deg,
+          transparent 37%,
+          sandybrown 35%,
+          sandybrown 50%,
+          transparent 50%
+        )
+        36% 16% / 3rem 26rem,
+      /*******************Cone 4 ********************/ /*cone top*/
+        linear-gradient(45deg, salmon 50%, transparent 50.5%) 52.5% 29.5% /
+        1.5rem 4rem,
+      /*cone top*/ linear-gradient(-45deg, salmon 50%, transparent 50.5%) 47.5%
+        29.5% / 1.5rem 4rem,
+      /*cone base*/
+        radial-gradient(ellipse at top, salmon 50%, transparent 50.5%) 50% 40% /
+        4rem 1rem,
+      /*******************Cone 3 ********************/ /*cone top*/
+        linear-gradient(45deg, yellowgreen 50%, transparent 50.5%) 27% 21.5% /
+        1.5rem 4rem,
+      /*cone top*/ linear-gradient(-45deg, yellowgreen 50%, transparent 50.5%)
+        22% 21.5% / 1.5rem 4rem,
+      /*cone base*/
+        radial-gradient(ellipse at top, yellowgreen 50%, transparent 50.5%) 22%
+        33% / 4rem 1rem,
+      /*******************Cone 2 adj********************/ /*cone top*/
+        linear-gradient(45deg, deepskyblue 50%, transparent 50.5%) 52.5% 10.5% /
+        1.5rem 4rem,
+      /*cone top*/ linear-gradient(-45deg, deepskyblue 50%, transparent 50.5%)
+        47.5% 10.5% / 1.5rem 4rem,
+      /*cone base*/
+        radial-gradient(ellipse at top, deepskyblue 50%, transparent 50.5%)
+        49.9% 23% / 4rem 1rem,
+      /*******************Cone 1 adj********************/ /*cone top*/
+        linear-gradient(45deg, orangered 50%, transparent 50.5%) 78% 15% /
+        1.5rem 4rem,
+      /*cone top*/ linear-gradient(-45deg, orangered 50%, transparent 50.5%) 73%
+        15% / 1.5rem 4rem,
+      /*cone base*/
+        radial-gradient(ellipse at top, orangered 50%, transparent 50.5%) 77.9%
+        27% / 4rem 1rem,
+      /*front pole1*/ linear-gradient(90deg, firebrick 50%, salmon 100%) 76% 40% /
+        2rem 10rem,
+      /*front pole2*/ linear-gradient(90deg, deepskyblue, blue) 50% 60% / 2rem
+        10rem,
+      /*back pole2*/ linear-gradient(90deg, darkorange, orangered) 24% 45% /
+        2rem 8rem,
+      /*base left*/
+        linear-gradient(
+          30deg,
+          transparent 37%,
+          red 35%,
+          red 50%,
+          transparent 50%
+        )
+        25% 78% / 10rem 10rem,
+      /*base left adj*/
+        linear-gradient(
+          -30deg,
+          transparent 37%,
+          red 35%,
+          red 50%,
+          transparent 50%
+        )
+        75% 78% / 10rem 10rem,
+      /*curve2 patch front*/
+        radial-gradient(ellipse at top, blue 40%, transparent 50.5%) 50% 74.5% /
+        2.9rem 0.5rem,
+      /*curve1 patch front*/
+        radial-gradient(ellipse at top, firebrick 40%, transparent 50.5%) 76.8%
+        61% / 2.9rem 0.8rem,
+      /*curve1 patch back*/
+        radial-gradient(ellipse at top, orangered 50%, transparent 50.5%) 23.2%
+        60.5% / 2.8rem 0.5rem,
+      /*body left*/
+        linear-gradient(
+          30deg,
+          transparent 37%,
+          salmon 35%,
+          salmon 50%,
+          transparent 50%
+        )
+        32% 75% / 9rem 14rem,
+      /*body left*/
+        linear-gradient(
+          30deg,
+          transparent 37%,
+          salmon 35%,
+          salmon 50%,
+          transparent 50%
+        )
+        82% 63% / 2rem 14rem,
+      /*body left square piece*/
+        linear-gradient(
+          -30deg,
+          transparent 37%,
+          salmon 35%,
+          salmon 50%,
+          transparent 50%
+        )
+        68% 75% / 9rem 14rem,
+      /*body left square piece*/
+        linear-gradient(
+          -30deg,
+          transparent 37%,
+          salmon 35%,
+          salmon 50%,
+          transparent 50%
+        )
+        18.5% 62% / 3rem 15rem,
+      /*body left*/
+        linear-gradient(
+          30deg,
+          transparent 37%,
+          goldenrod 35%,
+          yellow 50%,
+          transparent 50%
+        )
+        35% 35% / 8rem 10rem,
+      /*body left*/
+        linear-gradient(
+          30deg,
+          transparent 37%,
+          goldenrod 35%,
+          yellow 50%,
+          transparent 50%
+        )
+        35% 44% / 8rem 10rem,
+      /*body left*/
+        linear-gradient(
+          30deg,
+          transparent 37%,
+          goldenrod 35%,
+          yellow 50%,
+          transparent 50%
+        )
+        35% 53% / 8rem 10rem,
+      /*body left*/
+        linear-gradient(
+          30deg,
+          transparent 37%,
+          goldenrod 35%,
+          yellow 50%,
+          transparent 50%
+        )
+        35% 62% / 8rem 10rem,
+      /*base left adj*/
+        /*     linear-gradient(-30deg, transparent 37%, red 35%, blue 50%, transparent 50%) 25% 49% / 10rem 10rem, */
+        /*body left adj*/
+        linear-gradient(
+          -30deg,
+          transparent 37%,
+          goldenrod 35%,
+          yellow 50%,
+          transparent 50%
+        )
+        67% 34% / 8rem 10rem,
+      /*body left adj*/
+        linear-gradient(
+          -30deg,
+          transparent 37%,
+          goldenrod 35%,
+          yellow 50%,
+          transparent 50%
+        )
+        67% 44% / 8rem 10rem,
+      /*body left adj*/
+        linear-gradient(
+          -30deg,
+          transparent 37%,
+          goldenrod 35%,
+          yellow 50%,
+          transparent 50%
+        )
+        67% 53% / 8rem 10rem,
+      /*body left adj*/
+        linear-gradient(
+          -30deg,
+          transparent 37%,
+          goldenrod 35%,
+          yellow 50%,
+          transparent 50%
+        )
+        67% 63% / 8rem 10rem,
+      /*curve2 patch back*/
+        radial-gradient(ellipse at top, red 50%, transparent 50.5%) 50% 55.5% /
+        2.9rem 0.5rem,
+      /*roof triangle*/ linear-gradient(-20deg, yellow 50%, transparent 50.5%)
+        36% 27% / 7rem 5rem,
+      /*roof triangle*/ linear-gradient(20deg, yellow 50%, transparent 50.5%)
+        66% 27% / 7rem 5rem,
+      /*roof rectanglw*/ linear-gradient(yellow, gold) 48% 52% / 15rem 10rem,
+      /*back pole1*/ linear-gradient(90deg, yellowgreen, green) 50% 32% / 2rem
+        8rem,
+      /*body left adj*/
+        linear-gradient(
+          -20deg,
+          transparent 37%,
+          gold 35%,
+          yellow 50%,
+          transparent 50%
+        )
+        35% 15% / 8rem 10rem,
+      /*body left*/
+        linear-gradient(
+          20deg,
+          transparent 37%,
+          gold 35%,
+          yellow 50%,
+          transparent 50%
+        )
+        67% 15% / 8rem 10rem;
+
+    content: "";
+    background-repeat: no-repeat;
+  }
+
+  @media screen and (max-width: 800px) {
+    .bounce::before {
+      left: -3.3rem;
+    }
+  }
+</style>

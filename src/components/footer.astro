@@ -7,7 +7,7 @@ interface Props {
 const { title, hrefname } = Astro.props;
 ---
 
-<div class="footer"><a href={hrefname}>{title}</a></div>
+<div class="footer"><a href={hrefname}></a></div>
 
 <style>
   .footer {
@@ -16,5 +16,6 @@ const { title, hrefname } = Astro.props;
     z-index: 999;
     text-decoration: none;
     width: 100%;
+    padding: 0.5rem;
   }
 </style>

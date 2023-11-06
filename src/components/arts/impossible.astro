@@ -1,0 +1,108 @@
+---
+import CardLayout from "./cardLayout.astro";
+---
+
+<CardLayout
+  title="penrose-triangle"
+  hrefname="https://codepen.io/Olajide-Seun/pen/NWeBQXV"
+>
+  <div class="penrose-triangle"></div>
+</CardLayout>
+
+<style>
+  .penrose-triangle {
+    width: 30rem;
+    height: 30rem;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .penrose-triangle::before {
+    width: 20rem;
+    height: 20rem;
+    content: "";
+    position: absolute;
+    left: 6rem;
+    top: 10rem;
+    background-image: linear-gradient(60deg, transparent 50%, #9e9e9e 50%),
+      linear-gradient(-60deg, transparent 50%, #9e9e9e 50%),
+      linear-gradient(60deg, transparent 10%, #787878 10.7%),
+      linear-gradient(120deg, #787878 90%, transparent 90.5%),
+      linear-gradient(
+        60deg,
+        transparent 50%,
+        #dedede 50%,
+        #dedede 64%,
+        transparent 60.5%
+      ),
+      linear-gradient(
+        -60deg,
+        transparent 50%,
+        #9e9e9e 50%,
+        #9e9e9e 64%,
+        transparent 60.5%
+      ),
+      linear-gradient(
+        60deg,
+        transparent 50%,
+        #9e9e9e 50%,
+        #9e9e9e 64%,
+        transparent 60.5%
+      ),
+      linear-gradient(
+        -60deg,
+        transparent 50%,
+        #787878 50%,
+        #787878 64%,
+        transparent 60.5%
+      ),
+      linear-gradient(#dedede, #dedede);
+
+    background-size:
+      1rem 1.5rem,
+      /*mini-triangle*/ 1rem 1.5rem,
+      /*mini-triangle*/ 7.5rem 1.5rem,
+      /*horizontal left angle bar*/ 8rem 1.5rem,
+      /*horizontal right angle bar*/ 8rem 8rem,
+      /*rightbar*/ 8.5rem 8rem,
+      /*leftbar*/ 10rem 5rem,
+      /*right angle bar*/ 8rem 6rem,
+      /*left angle bar*/ 8rem 1.5rem /*horizontal bar*/;
+
+    background-position:
+      14.9% 49.5%,
+      /*black*/ 19.9% 49.5%,
+      /*black*/ 24% 49.5%,
+      /*horizontal left angle bar*/ 48% 49.5%,
+      /*horizontal right angle bar*/ 48% 10%,
+      /*rightbar*/ 24% 10%,
+      /*leftbar*/ 30% 18%,
+      /*right angle bar*/ 33% 23%,
+      /*left angle bar*/ 38% 41.5% /*horizontal bar*/;
+
+    background-repeat: no-repeat;
+    -webkit-mask-image: linear-gradient(
+      90deg,
+      #fff 50%,
+      transparent 50.5%,
+      #fff 80%
+    );
+    mask-image: linear-gradient(90deg, transparent);
+    -webkit-mask-size: 300% 100%;
+    mask-size: 300% 100%;
+    animation: clipfade 4s linear infinite;
+  }
+
+  @keyframes clipfade {
+    100% {
+      -webkit-mask-position: right;
+      mask-position: right;
+    }
+  }
+
+  @media screen and (max-width: 800px) {
+    .penrose-triangle::before {
+      left: 3.5rem;
+    }
+  }
+</style>

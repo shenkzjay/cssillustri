@@ -2,7 +2,10 @@
 import CardLayout from "./cardLayout.astro";
 ---
 
-<CardLayout title="glass" hrefname="glass">
+<CardLayout
+  title="glass"
+  hrefname="https://codepen.io/Olajide-Seun/pen/xxmeWVO"
+>
   <div class="glass"></div>
 </CardLayout>
 
@@ -66,5 +69,11 @@ import CardLayout from "./cardLayout.astro";
         /*body*/
         /*     linear-gradient(#e8f1f1, #e8f1f1) 25% 27% / 3rem 4.5rem */;
     background-repeat: no-repeat;
+  }
+
+  @media screen and (max-width: 800px) {
+    .glass::before {
+      left: 3.5rem;
+    }
   }
 </style>

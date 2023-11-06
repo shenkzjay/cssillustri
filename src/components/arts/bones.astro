@@ -1,0 +1,185 @@
+---
+import CardLayout from "./cardLayout.astro";
+---
+
+<CardLayout
+  title="bones"
+  hrefname="https://codepen.io/Olajide-Seun/pen/bGOZRpZ"
+>
+  <div class="bones"></div>
+</CardLayout>
+
+<style>
+  .bones {
+    width: 30rem;
+    height: 30rem;
+    margin: 0px auto;
+    position: relative;
+  }
+
+  .bones::before {
+    content: "";
+    width: 30rem;
+    height: 30rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background:
+    
+        /*margin line*/
+      radial-gradient(ellipse, black 50%, transparent 50.5%) 50% 58.5% / 10rem
+        0.5rem,
+      /*margin line*/ radial-gradient(ellipse, black 50%, transparent 50.5%) 50%
+        68% / 10rem 0.5rem,
+      /*nose*/ linear-gradient(135deg, transparent 50%, black 50.5%) 47% 50% /
+        2rem 2.5rem,
+      linear-gradient(-135deg, transparent 50%, black 50.5%) 54% 50% / 2rem
+        2.5rem,
+      /*eyes*/ radial-gradient(ellipse at bottom, black 50%, transparent 50.5%)
+        39% 33% / 5.5rem 4rem,
+      radial-gradient(ellipse at top, black 50%, transparent 50.5%) 39% 44.5% /
+        5.5rem 2rem,
+      /*eyes*/ radial-gradient(ellipse at bottom, black 50%, transparent 50.5%)
+        60% 33% / 5.5rem 4rem,
+      radial-gradient(ellipse at top, black 50%, transparent 50.5%) 60% 44.5% /
+        5.5rem 2rem,
+      /*top skull*/
+        radial-gradient(ellipse at bottom, white 50%, transparent 50.5%) 50% 0% /
+        20rem 8rem,
+      /*side left skull*/
+        radial-gradient(ellipse at right, white 50%, transparent 50.5%) 25% 11% /
+        4.5rem 15rem,
+      /*side right skull*/
+        radial-gradient(ellipse at left, white 50%, transparent 50.5%) 75% 11% /
+        4.5rem 15rem,
+      /*side center skull*/ linear-gradient(white, white) 50% 38% / 6rem 10rem,
+      /*side center skull*/ linear-gradient(white, white) 50% 32% / 10rem 6rem,
+      /*side center trianfgle skull*/
+        linear-gradient(60deg, transparent 50.5%, white 50%) 33% 50% / 4rem 4rem,
+      /*side center triangle skull*/
+        linear-gradient(-60deg, transparent 50.5%, white 50%) 67% 50% / 4rem
+        4rem,
+      /*teeth*/ radial-gradient(ellipse, black 50%, transparent 50.5%) 50% 64% /
+        0.5rem 3em,
+      radial-gradient(ellipse, black 50%, transparent 50.5%) 53% 64% / 0.5rem
+        3em,
+      radial-gradient(ellipse, black 50%, transparent 50.5%) 47% 64% / 0.5rem
+        3em,
+      radial-gradient(ellipse, black 50%, transparent 50.5%) 44% 64% / 0.5rem
+        3em,
+      radial-gradient(ellipse, black 50%, transparent 50.5%) 41% 64% / 0.5rem
+        2.5em,
+      radial-gradient(ellipse, black 50%, transparent 50.5%) 56% 64% / 0.5rem
+        2.7em,
+      radial-gradient(ellipse, black 50%, transparent 50.5%) 59% 64% / 0.5rem
+        2.5em,
+      radial-gradient(ellipse, black 50%, transparent 50.5%) 50% 63% / 8rem
+        0.3rem,
+      /**jaw*/ /*top skull*/
+        radial-gradient(ellipse at top, white 50%, transparent 50.5%) 50% 78% /
+        11rem 4rem,
+      /*side center jaw*/ linear-gradient(white, white) 50% 65% / 6rem 6rem,
+      /*side center jaw*/ linear-gradient(black, black) 50% 61.3% / 7.3rem 5rem,
+      /*side center trianfgle skull*/
+        linear-gradient(80deg, transparent 50.5%, white 50%) 32% 55% / 4rem
+        10rem,
+      /*side center triangle skull*/
+        linear-gradient(-80deg, transparent 50.5%, white 50%) 68% 55% / 4rem
+        10rem,
+      linear-gradient(black, black);
+
+    /*facejaws*/
+    /*     radial-gradient(ellipse at top, brown 50%, transparent 50.5%) 50% 66% / 20rem 15rem; */
+
+    background-repeat: no-repeat;
+  }
+
+  .bones::after {
+    content: "";
+    width: 30rem;
+    height: 30rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background:
+    
+      /*glasees left*/
+      radial-gradient(ellipse at bottom, black 50%, transparent 50.5%) 32% 33.5% /
+        9rem 2rem,
+      radial-gradient(ellipse at top, black 50%, transparent 50.5%) 32% 45% /
+        9rem 5rem,
+      /*glasees right*/
+        radial-gradient(ellipse at bottom, black 50%, transparent 50.5%) 68%
+        33.5% / 9rem 2rem,
+      radial-gradient(ellipse at top, black 50%, transparent 50.5%) 68% 45% /
+        9rem 5rem,
+      /*glasees frame*/ linear-gradient(black, black) 50% 38% / 1.3rem 0.3rem,
+      /*nose*/
+        radial-gradient(
+          ellipse at top,
+          transparent 40%,
+          40%,
+          black 45%,
+          transparent 50.5%
+        )
+        50% 55% / 3.5rem 1rem,
+      linear-gradient(98deg, transparent 40%, 40%, black 50%, transparent 50.5%)
+        46.7% 52%/ 2rem 1rem,
+      /**mouth*/
+        radial-gradient(ellipse at top, saddlebrown 50%, transparent 50.5%) 50%
+        65% / 7rem 2.5rem,
+      /**hair*/ radial-gradient(ellipse at top, black 50%, transparent 50.5%)
+        50% 15% / 15rem 1rem,
+      /**hair*/ linear-gradient(black, black) 50% 13% / 9rem 1.5rem,
+      /*face*/ /*forehead*/
+        radial-gradient(ellipse at bottom, #c68863 50%, transparent 50.5%) 50%
+        0% / 20rem 13rem,
+      /*hair back*/ radial-gradient(ellipse, black 50%, transparent 50.5%) 50%
+        4% / 20rem 10rem,
+      /*hair left side*/ radial-gradient(ellipse, black 50%, transparent 50.5%)
+        25% 18% / 4rem 10rem,
+      /*hair right side*/ radial-gradient(ellipse, black 50%, transparent 50.5%)
+        75% 18% / 4rem 10rem,
+      /*facejaws*/
+        radial-gradient(ellipse at top, #c68863 50%, transparent 50.5%) 50% 83% /
+        20rem 15rem,
+      /*ear left*/ radial-gradient(ellipse, #c68863 50%, transparent 50.5%) 23%
+        40% / 3.5rem 5rem,
+      /*ear right*/ radial-gradient(ellipse, #c68863 50%, transparent 50.5%) 77%
+        40% / 3.5rem 5rem,
+      linear-gradient(lightcyan, lightcyan);
+    background-repeat: no-repeat;
+    transition: opacity 2s ease-in-out;
+    opacity: 1;
+    -webkit-mask-image: linear-gradient(
+      90deg,
+      #fff 50%,
+      transparent 50.5%,
+      #fff 80%,
+      #fff 100%
+    );
+    mask-image: linear-gradient(90deg, transparent);
+    -webkit-mask-size: 400% 400%;
+    mask-size: 400% 400%;
+    animation: showbefore 4s linear infinite;
+  }
+
+  @keyframes showbefore {
+    60% {
+      opacity: 1;
+    }
+    100%,
+    90% {
+      -webkit-mask-position: right;
+      mask-position: right;
+      opacity: 0;
+    }
+  }
+
+  @media screen and (max-width: 800px) {
+    .bones::after,
+    .bones::before {
+      left: -3rem;
+    }
+  }
+</style>

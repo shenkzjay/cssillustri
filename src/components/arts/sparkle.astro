@@ -2,7 +2,10 @@
 import CardLayout from "./cardLayout.astro";
 ---
 
-<CardLayout title="sparkle" hrefname="sparkle">
+<CardLayout
+  title="sparkle"
+  hrefname="https://codepen.io/Olajide-Seun/pen/poqGLLE"
+>
   <div class="sparkle"></div>
 </CardLayout>
 
@@ -158,6 +161,13 @@ import CardLayout from "./cardLayout.astro";
     }
     100% {
       --salmonlight: pink;
+    }
+  }
+
+  @media screen and (max-width: 800px) {
+    .sparkle::after,
+    .sparkle::before {
+      left: -3rem;
     }
   }
 </style>

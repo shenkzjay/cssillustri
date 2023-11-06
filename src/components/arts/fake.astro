@@ -48,6 +48,7 @@ import CardLayout from "./cardLayout.astro";
     height: 30rem;
     position: absolute;
     font-size: 42px;
+    color: #000;
     font-family: "oswald";
     font-weight: bold;
     top: 50px;
@@ -76,5 +77,22 @@ import CardLayout from "./cardLayout.astro";
     transform: rotate(-20deg);
     background: linear-gradient(#c4c4c4, #c4c4c4) 0% 0.8% / 8.3rem 2.5rem;
     background-repeat: no-repeat;
+  }
+
+  @media screen and (max-width: 800px) {
+    .fake {
+      width: 100%;
+    }
+
+    .fake::after {
+      width: 100%;
+      left: 175px;
+      top: 8rem;
+    }
+
+    .fake::before {
+      width: 100%;
+      left: 35px;
+    }
   }
 </style>

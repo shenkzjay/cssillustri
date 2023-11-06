@@ -16,11 +16,17 @@ import Small from "../components/arts/small.astro";
 import Glass from "../components/arts/glass.astro";
 import Sparkle from "../components/arts/sparkle.astro";
 import Lost from "../components/arts/lost.astro";
+import Bones from "../components/arts/bones.astro";
+import Bounce from "../components/arts/bounce.astro";
+import Crawl from "../components/arts/crawl.astro";
+import Impossible from "../components/arts/impossible.astro";
+import Fall from "../components/arts/fall.astro";
+import Key from "../components/arts/key.astro";
 ---
 
 <Layout title="home">
   <main>
-    <section class="section1">
+    <section class="section1" id="top">
       <div><Witchy /></div>
     </section>
 
@@ -74,6 +80,33 @@ import Lost from "../components/arts/lost.astro";
     </section>
     <section class="section9">
       <section class="lost"><Lost /></section>
+      <section class="section10">
+        <div class="bones"><Bones /></div>
+        <div class="bounce"><Bounce /></div>
+        <div class="lock"><Key /></div>
+      </section>
+      <section class="section11">
+        <div class="crawl"><Crawl /></div>
+        <div class="penrose-triangle"><Impossible /></div>
+        <div class="penrose-triangle"><Fall /></div>
+      </section>
+
+      <section class="footer">
+        <footer>
+          <!-- break -->
+          <section class="scrolltotop">
+            <div class="">
+              <a href="#top">Scroll to top ↑</a>
+            </div>
+            <div>
+              <p>#divtober 2023</p>
+              <p>A css drawing project</p>
+           
+            
+            </div>
+          </section>
+        </footer>
+      </section>
     </section>
   </main>
 </Layout>
@@ -161,12 +194,13 @@ import Lost from "../components/arts/lost.astro";
 
     & div:nth-child(2) {
       width: 50%;
-      background-color: mediumaquamarine;
+      background-color: darkcyan;
     }
   }
 
   .section7 {
     background-color: #010101;
+    overflow: hidden;
   }
 
   .section8 {
@@ -184,6 +218,42 @@ import Lost from "../components/arts/lost.astro";
     }
 
     & div:nth-child(3) {
+      overflow: hidden;
+    }
+  }
+
+  .section10 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    & div:first-child {
+      overflow: hidden;
+    }
+
+    & div:nth-child(2) {
+      overflow: hidden;
+    }
+
+    & div:nth-child(3) {
+      overflow: hidden;
+    }
+  }
+
+  .section11 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    & div:first-child {
+      background-color: bisque;
+      overflow: hidden;
+    }
+
+    & div:nth-child(2) {
+      background-color: palevioletred;
+      overflow: hidden;
+    }
+
+    & div:nth-child(3) {
+      background-color: lightgreen;
       overflow: hidden;
     }
   }
@@ -207,12 +277,47 @@ import Lost from "../components/arts/lost.astro";
     }
   }
 
+  .scrolltotop {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    padding: 10vmin 0;
+    background-color: #010101;
+
+    & div:first-child {
+      & a {
+        padding: 16px 30px;
+        background-color: bisque;
+        border: none;
+        color: brown;
+        font-weight: bold;
+        cursor: pointer;
+        border-radius: 30px;
+        font-size: 18px;
+        text-decoration: none;
+      }
+    }
+
+    & div:nth-child(2) {
+      & p {
+        text-align: center;
+        margin-bottom: 1.5rem;
+        font-size: 18px;
+        color: #c4c4c4;
+      }
+    }
+  }
+
   .tangled {
     background-color: lightblue;
+    overflow: hidden;
   }
 
   .lost {
     background-color: #010101;
+    overflow: hidden;
   }
 
   .section4 {
@@ -229,6 +334,89 @@ import Lost from "../components/arts/lost.astro";
 
   .hidden {
     display: none;
+  }
+
+  @media screen and (max-width: 800px) {
+    .section2 {
+      display: flex;
+      flex-direction: column;
+
+      & div:first-child {
+        width: 100%;
+        overflow: hidden;
+      }
+
+      & div:nth-child(2) {
+        width: 100%;
+        overflow: hidden;
+        background-color: lightcyan;
+      }
+    }
+
+    .section3 {
+      display: grid;
+      grid-template-columns: 1fr;
+
+      & div:nth-child(3) {
+        background-color: lightgray;
+        overflow: hidden;
+      }
+    }
+
+    .section4 {
+
+
+  }
+
+    .section5 {
+      display: flex;
+      flex-direction: column;
+
+      & div:first-child {
+        width: 100%;
+        overflow: hidden;
+      }
+
+      & div:nth-child(2) {
+        width: 100%;
+        overflow: hidden;
+      }
+    }
+
+    .section6 {
+      display: flex;
+      flex-direction: column;
+
+      & div:first-child {
+        width: 100%;
+        overflow: hidden;
+      }
+
+      & div:nth-child(2) {
+        width: 100%;
+        overflow: hidden;
+      }
+    }
+
+    .section8 {
+      display: grid;
+      grid-template-columns: 1fr;
+  }
+
+  .section10 {
+      display: grid;
+      grid-template-columns: 1fr;
+  }
+
+  .section11 {
+      display: grid;
+      grid-template-columns: 1fr;
+  }
+
+
+  .tangled {
+    background-color: lightblue;
+    width: 100%;
   }
 </style>
 

@@ -2,7 +2,10 @@
 import CardLayout from "./cardLayout.astro";
 ---
 
-<CardLayout title="space" hrefname="space">
+<CardLayout
+  title="space"
+  hrefname="https://codepen.io/Olajide-Seun/pen/JjwxbRX"
+>
   <div class="space"></div>
 </CardLayout>
 
@@ -176,5 +179,12 @@ import CardLayout from "./cardLayout.astro";
         3rem;
 
     background-repeat: no-repeat;
+  }
+
+  @media screen and (max-width: 800px) {
+    .space {
+      transform: scale(0.8);
+      left: -3rem;
+    }
   }
 </style>

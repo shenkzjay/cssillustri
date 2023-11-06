@@ -2,7 +2,10 @@
 import CardLayout from "./cardLayout.astro";
 ---
 
-<CardLayout title="component" hrefname="component">
+<CardLayout
+  title="component"
+  hrefname="https://codepen.io/Olajide-Seun/pen/zYeOvzy"
+>
   <div class="component"></div>
 </CardLayout>
 
@@ -85,5 +88,11 @@ import CardLayout from "./cardLayout.astro";
         )
         50% 55% / 6rem 4rem;
     background-repeat: no-repeat;
+  }
+
+  @media screen and (max-width: 800px) {
+    .component::before {
+      left: -3rem;
+    }
   }
 </style>

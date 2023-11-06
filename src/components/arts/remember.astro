@@ -2,7 +2,10 @@
 import CardLayout from "./cardLayout.astro";
 ---
 
-<CardLayout title="remember" hrefname="remember">
+<CardLayout
+  title="remember"
+  hrefname="https://codepen.io/Olajide-Seun/pen/BavervG"
+>
   <div class="remember"></div>
 </CardLayout>
 
@@ -47,5 +50,16 @@ import CardLayout from "./cardLayout.astro";
       linear-gradient(yellowgreen, bisque) 86.8% 69% / 6rem 5rem,
       linear-gradient(white, white) 88% 70% / 7rem 6rem;
     background-repeat: no-repeat;
+  }
+
+  @media screen and (max-width: 800px) {
+    .remember {
+      transform: scale(0.6);
+      height: 100vmin;
+    }
+    .remember::before {
+      left: -12rem;
+      top: -10rem;
+    }
   }
 </style>

@@ -2,7 +2,10 @@
 import CardLayout from "./cardLayout.astro";
 ---
 
-<CardLayout title="rules" hrefname="codepen">
+<CardLayout
+  title="rules"
+  hrefname="https://codepen.io/Olajide-Seun/pen/vYbGoVb"
+>
   <div class="rules"></div>
 </CardLayout>
 
@@ -68,10 +71,10 @@ import CardLayout from "./cardLayout.astro";
       linear-gradient(#000, #000) 50% 80% / 10vmin 40vmin,
       linear-gradient(#333, #333) 49.7% 5% / 15vmin 2vmin;
     background-repeat: no-repeat;
-    animation: blink 5s 500ms linear infinite;
+    animation: blinks 5s 500ms linear infinite;
   }
 
-  @keyframes blink {
+  @keyframes blinks {
     0% {
       --yellow: #575757;
       --green: #575757;

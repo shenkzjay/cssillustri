@@ -1,0 +1,94 @@
+---
+import CardLayout from "./cardLayout.astro";
+---
+
+<CardLayout title="lock" hrefname="https://codepen.io/Olajide-Seun/pen/vYvrVQL">
+  <div class="key"></div>
+</CardLayout>
+
+<style>
+  .key {
+    width: 20rem;
+    height: 30rem;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .key::after {
+    content: "";
+    width: 10rem;
+    height: 15rem;
+    background-image: radial-gradient(ellipse, white 50%, transparent 50.7%),
+      radial-gradient(ellipse, #c4c4c4 50.5%, #b9b9b9 70.5%, transparent 70.7%),
+      radial-gradient(ellipse, #a4a4a4 0%, #e4e4e4 70.5%, transparent 70.7%),
+      linear-gradient(#a1a1a1, #e4e4e4), linear-gradient(#a4a4a4, #e4e4e4),
+      linear-gradient(#b4b4b4, transparent), linear-gradient(#e4e4e4, #e4e4e4),
+      linear-gradient(#c4c4c4, #c4c4c4),
+      linear-gradient(135deg, #c4c4c4 50%, transparent 50%),
+      linear-gradient(165deg, #c4c4c4 50%, transparent 50%),
+      linear-gradient(45deg, #a4a4a4 50%, transparent 50%),
+      linear-gradient(145deg, #c4c4c4 50%, transparent 50%),
+      linear-gradient(165deg, #a1a1a1 50%, transparent 50%),
+      linear-gradient(45deg, #c4c4c4 50%, transparent 50%),
+      linear-gradient(45deg, #a1a1a1 50%, transparent 50%),
+      linear-gradient(45deg, #a1a1a1 50%, transparent 50%),
+      linear-gradient(115deg, #e4e4e4 50%, transparent 50%),
+      linear-gradient(green, green);
+
+    background-size:
+      1.8rem 1.8rem,
+      /*circle1**/ 4.5rem 4.5rem,
+      /*circle2**/ 5rem 5rem,
+      /*circle3**/ 2.6rem 1rem,
+      /*first green bar**/ 1.85rem 1.1rem,
+      /*second green bar**/ 0.5rem 10rem,
+      /*third green bar**/ 1rem 10rem,
+      /*fifth green bar**/ 1rem 1.2rem,
+      /*fourth green bar**/ 2.1rem 1rem,
+      /*first yellow triangle**/ 1.4rem 1.5rem,
+      /*second yellow triangle**/ 1.8rem 1.3rem,
+      /*third yellow triangle**/ 1.2rem 1rem,
+      /*fourth yellow triangle**/ 1.4rem 1.3rem,
+      /*fifth yellow triangle**/ 1.8rem 1.3rem,
+      /*sixth yellow triangle**/ 1.4rem 2.2rem,
+      /*seventh yellow triangle**/ 1.8rem 1.3rem,
+      /*seventh yellow triangle**/ 2.5rem 1.3rem,
+      /*seventh yellow triangle**/ 1rem 10rem; /*2st gray bar**/
+
+    background-position:
+      50% 5%,
+      /*circle**/ 50% 2%,
+      /*circle2**/ 50% 0,
+      /*circle3**/ 50% 33%,
+      /*first green bar**/ 50% 40.3%,
+      /*second green bar**/ 45% 70%,
+      /*third green bar**/ 45% 70%,
+      /*fifth green bar**/ 51.3% 83.5%,
+      /*fourth green bar**/ 55% 47%,
+      /*first yellow triangle**/ 49% 58%,
+      /*second yellow triangle**/ 50% 48%,
+      /*third yellow triangle**/ 50% 67.5%,
+      /*fourth yellow triangle**/ 48% 73%,
+      /*fifth yellow triangle**/ 50% 88%,
+      /*sixth yellow triangle**/ 49% 57%,
+      /*seventh yellow triangle**/ 50% 75%,
+      /*seventh yellow triangle**/ 54% 97%,
+      /*seventh yellow triangle**/ 45% 70%; /*2st gray bar**/
+
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 5rem;
+    top: 8rem;
+    animation: bubble 0.9s linear forwards;
+    animation-timeline: view();
+  }
+
+  @keyframes bubble {
+    from {
+      transform: rotateY(360deg) scale(1);
+    }
+    to {
+      transform: rotateY(-360deg) scale(1.5);
+    }
+  }
+</style>
