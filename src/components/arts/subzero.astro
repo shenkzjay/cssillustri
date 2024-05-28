@@ -1,0 +1,194 @@
+---
+import CardLayout from "./cardLayout.astro";
+---
+
+<CardLayout title="Music" hrefname="https://codepen.io/Olajide-Seun/pen/MWZPovG">
+  <div class="sub-zero"></div>
+</CardLayout>
+
+<style>
+  .sub-zero {
+    --maskblue: #0b3e67;
+    --lightblue: #1571bd;
+    --lightblueshade: #0a4b81;
+    --shadebrown: #fbbc73;
+    --darkshade: #a8987b;
+    --darkershade: #907b55;
+    width: 100vmin;
+    height: 70vmin;
+    margin: 0 auto;
+    position: relative;
+    background:
+    /*eye*/
+    
+     /*eyesballs right*/
+      radial-gradient(ellipse, darkblue 10%, cyan 45%, darkblue 50%, transparent 50.5%) 42.2% 40% /
+        3.2vmin 3.2vmin,
+      /*eyes left*/ radial-gradient(ellipse at bottom, white 50%, transparent 50.5%) 42% 39% / 9vmin
+        2vmin,
+      radial-gradient(ellipse at top, white 50%, transparent 50.5%) 42% 41.5% / 9vmin 2vmin,
+      /*expression left*/
+        radial-gradient(
+          ellipse at top,
+          transparent 40%,
+          var(--darkshade) 40%,
+          var(--darkshade) 50%,
+          transparent 50%
+        )
+        49.8% 38% / 3.5vmin 2vmin,
+      /*eyes-tired left*/
+        linear-gradient(
+          -30deg,
+          transparent 45%,
+          var(--darkshade) 45%,
+          var(--darkshade) 50%,
+          transparent 50.5%
+        )
+        43.8% 42% / 4vmin 4vmin,
+      /*expression right*/
+        radial-gradient(
+          ellipse at top,
+          transparent 40%,
+          var(--darkshade) 40%,
+          var(--darkshade) 50%,
+          transparent 50%
+        )
+        52.3% 38% / 3.5vmin 2vmin,
+      radial-gradient(
+          ellipse at bottom,
+          transparent 40%,
+          var(--darkshade) 50%,
+          var(--darkshade) 50%,
+          transparent 50%
+        )
+        51% 39% / 8.5vmin 5vmin,
+      linear-gradient(var(--darkshade), var(--darkshade)) 51% 35.5% / 0.5vmin 2.5vmin,
+      /*angry eyelid left*/
+        radial-gradient(ellipse at bottom, var(--darkershade) 50%, transparent 50.5%) 41.8% 37% /
+        8.5vmin 3.5vmin,
+      radial-gradient(ellipse at bottom, var(--darkershade) 50%, transparent 50.5%) 42% 37% / 9vmin
+        4vmin,
+      /*angry eyebrows shade left*/
+        radial-gradient(ellipse, var(--darkshade) 50%, transparent 50.5%) 42% 39% / 20vmin 5vmin,
+      /*angry eyebrows black left*/
+        radial-gradient(
+          ellipse at 15% 90%,
+          transparent 40%,
+          black 40%,
+          black 50%,
+          transparent 50.5%
+        )
+        45% 34% / 12vmin 5vmin,
+      /*eyesballs right*/
+        radial-gradient(ellipse, darkblue 10%, cyan 45%, darkblue 50%, transparent 50.5%) 59.2% 40% /
+        3.2vmin 3.2vmin,
+      /*eyes right*/ radial-gradient(ellipse at bottom, white 50%, transparent 50.5%) 59.6% 39% /
+        9vmin 2vmin,
+      radial-gradient(ellipse at top, white 50%, transparent 50.5%) 59.6% 41.5% / 9vmin 2vmin,
+      /*eyes-tired right*/
+        linear-gradient(
+          30deg,
+          transparent 45%,
+          var(--darkshade) 45%,
+          var(--darkshade) 50%,
+          transparent 50.5%
+        )
+        57.8% 42% / 4vmin 4vmin,
+      /*angry eyelid right*/
+        radial-gradient(ellipse at bottom, var(--shadebrown) 50%, transparent 50.5%) 59.5% 37% /
+        9vmin 4vmin,
+      /*angry eyebrows shade left*/ radial-gradient(ellipse, bisque 50%, transparent 50.5%) 58%
+        39.5% / 20vmin 5vmin,
+      /*angry eyebrows black right*/
+        radial-gradient(
+          ellipse at 90% 90%,
+          transparent 40%,
+          black 40%,
+          black 50%,
+          transparent 50.5%
+        )
+        57% 34% / 12vmin 5vmin,
+      /*nose mask stripes*/
+        linear-gradient(25deg, transparent 30%, black 30%, black 50%, transparent 50.5%) 52.5% 55% /
+        5vmin 5vmin,
+      linear-gradient(25deg, transparent 30%, black 30%, black 50%, transparent 50.5%) 52% 61% /
+        5vmin 5vmin,
+      linear-gradient(25deg, transparent 30%, black 30%, black 50%, transparent 50.5%) 51% 67% /
+        5vmin 5vmin,
+      linear-gradient(25deg, transparent 30%, black 30%, black 50%, transparent 50.5%) 50% 74% /
+        5vmin 5vmin,
+      /**nosemask shade**/
+        radial-gradient(ellipse at left, rgba(255, 255, 255, 0.3) 50%, transparent 50.5%) 55.5% 76% /
+        8vmin 30vmin,
+      /**nosemask**/ radial-gradient(ellipse, black 50%, transparent 50.5%) 51.2% 80% / 20vmin
+        35vmin,
+      /*     linear-gradient(black, black) 50.8% 59.5% / 0vmin 20vmin, */ /**eyemask left**/
+        radial-gradient(ellipse, var(--darkshade) 50%, transparent 50.5%) 40% 35% / 16vmin 20vmin,
+      radial-gradient(ellipse, var(--lightblueshade) 50%, transparent 50.5%) 38% 34% / 18vmin 24vmin,
+      /**eyemask right**/ radial-gradient(ellipse, wheat 50%, transparent 50.5%) 62% 35% / 16vmin
+        20vmin,
+      radial-gradient(ellipse, var(--lightblue) 50%, transparent 50.5%) 64% 34% / 18vmin 24vmin,
+      /*head shade*/ /*head shade*/ radial-gradient(ellipse, black 50%, transparent 50.5%) 49% 9% /
+        30vmin 20vmin,
+      /*head shade*/ radial-gradient(ellipse, rgba(245, 245, 245, 0.3) 50%, transparent 50.5%) 51%
+        10% / 30vmin 20vmin,
+      /**eyemask**/ radial-gradient(ellipse, black 50%, transparent 50.5%) 51.2% 13% / 25vmin 20vmin,
+      radial-gradient(ellipse at left, var(--lightblue) 50%, transparent 50.5%) 59.5% 78.5% / 14vmin
+        38vmin,
+      radial-gradient(ellipse, var(--maskblue) 50%, transparent 50.5%) 51.2% 80% / 28vmin 40vmin,
+      /*face shade*/ radial-gradient(ellipse, var(--darkshade) 50%, transparent 50.5%) 48% 43% /
+        10vmin 8vmin,
+      linear-gradient(wheat, wheat) 50% 36.5% / 20vmin 10vmin,
+      /*sidelinemask left*/ radial-gradient(ellipse at right, black 50%, transparent 50.5%) 39% 63% /
+        4vmin 8vmin,
+      /*sidelinemask right*/ radial-gradient(ellipse at left, black 50%, transparent 50.5%) 63% 63% /
+        4vmin 8vmin,
+      /*nosemaskpatch left*/ radial-gradient(ellipse, black 50%, transparent 50.5%) 38% 44% / 20vmin
+        20vmin,
+      radial-gradient(ellipse, var(--lightblueshade) 50%, transparent 50.5%) 38% 49% / 20vmin 20vmin,
+      radial-gradient(ellipse, black 50%, transparent 50.5%) 38% 54% / 20vmin 20vmin,
+      /*nosemaskpatch right*/ radial-gradient(ellipse, black 50%, transparent 50.5%) 64% 43% /
+        20vmin 20vmin,
+      radial-gradient(ellipse, var(--lightblue) 50%, transparent 50.5%) 63% 50% / 20vmin 20vmin,
+      radial-gradient(ellipse, black 50%, transparent 50.5%) 63% 55% / 20vmin 20vmin,
+      /*ear*/ radial-gradient(ellipse at left, black 50%, transparent 50.5%) 70.5% 32% / 4.5vmin
+        20vmin,
+      /*ear shade*/ radial-gradient(ellipse at left, #d3d3d3 50%, transparent 50.5%) 71% 32% / 5vmin
+        20vmin,
+      /*ear*/ radial-gradient(ellipse at right, black 50%, transparent 50.5%) 31% 32% / 4.5vmin
+        20vmin,
+      radial-gradient(ellipse at right, #d3d3d3 50%, transparent 50.5%) 30.5% 32% / 5vmin 20vmin,
+      /*bottom jaw*/ /*bottom jaw left shade*/
+        radial-gradient(ellipse at 170% 0%, var(--lightblueshade) 50%, transparent 50.5%) 31.4% 94% /
+        20vmin 30vmin,
+      radial-gradient(ellipse at top, var(--lightblue) 50%, transparent 50.5%) 51% 95% / 50vmin
+        40vmin,
+      linear-gradient(black, black) 50% 33% / 35vmin 10vmin,
+      /*head*/ radial-gradient(ellipse at bottom, black 50%, transparent 50.5%) 51% 0 / 50vmin
+        20vmin;
+
+    background-repeat: no-repeat;
+  }
+
+  .sub-zero:before {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    background: 
+    
+    
+    /*shoulder left*/
+      radial-gradient(ellipse at 100% 130%, black 50%, transparent 50.5%) -50% 97% / 70vmin 25vmin,
+      /*shoulder right*/ radial-gradient(ellipse at 0% 130%, black 50%, transparent 50.5%) 160% 97% /
+        70vmin 25vmin,
+      /*neck*/ linear-gradient(-85deg, black 50%, transparent 50.5%) 33% 90% / 28vmin 20vmin,
+      linear-gradient(85deg, black 50%, transparent 50.5%) 67% 90% / 20vmin 20vmin;
+    /*     linear-gradient(black, black) 60% 90% / 10vmin 20vmin */
+
+    background-repeat: no-repeat;
+    z-index: -1;
+  }
+</style>

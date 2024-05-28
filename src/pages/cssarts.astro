@@ -1,0 +1,441 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Witchy from "../components/arts/witchy.astro";
+import Rules from "../components/arts/rules.astro";
+import Feast from "../components/arts/feast.astro";
+import Alive from "../components/arts/alive.astro";
+import Fake from "../components/arts/fake.astro";
+import Seeing from "../components/arts/seeing.astro";
+import Tangled from "../components/arts/tangled.astro";
+import Space from "../components/arts/space.astro";
+import Sticky from "../components/arts/sticky.astro";
+import Component from "../components/arts/component.astro";
+import Remember from "../components/arts/remember.astro";
+import Collect from "../components/arts/collect.astro";
+import Small from "../components/arts/small.astro";
+import Glass from "../components/arts/glass.astro";
+import Sparkle from "../components/arts/sparkle.astro";
+import Lost from "../components/arts/lost.astro";
+import Bones from "../components/arts/bones.astro";
+import Bounce from "../components/arts/bounce.astro";
+import Crawl from "../components/arts/crawl.astro";
+import Impossible from "../components/arts/impossible.astro";
+import Fall from "../components/arts/fall.astro";
+import Key from "../components/arts/key.astro";
+---
+
+<Layout title="home">
+  <main>
+    <section class="section1" id="top">
+      <div><Witchy /></div>
+    </section>
+
+    <section class="section2">
+      <div><Rules /></div>
+      <div><Feast /></div>
+    </section>
+
+    <section class="section3">
+      <div><Seeing /></div>
+      <div><Alive /></div>
+      <div><Fake /></div>
+    </section>
+
+    <!-- break -->
+    <section class="loadmore">
+      <div class="">
+        <button>Load more</button>
+      </div>
+    </section>
+
+    <section class="section4">
+      <section class="tangled"><Tangled /></section>
+      <section class="section5">
+        <div><Collect /></div>
+        <div><Sticky /></div>
+      </section>
+
+      <section class="section6">
+        <div><Component /></div>
+        <div><Remember /></div>
+      </section>
+
+      <section class="section7">
+        <div>
+          <Space />
+        </div>
+      </section>
+      <section class="section8">
+        <div class="small"><Small /></div>
+        <div class="sparkle"><Sparkle /></div>
+        <div class="glass"><Glass /></div>
+      </section>
+
+      <!-- break -->
+      <section class="andmore">
+        <div class="">
+          <button>And more..</button>
+        </div>
+      </section>
+    </section>
+    <section class="section9">
+      <section class="lost"><Lost /></section>
+      <section class="section10">
+        <div class="bounce"><Bounce /></div>
+        <div class="bones"><Bones /></div>
+        <div class="lock"><Key /></div>
+      </section>
+      <section class="section11">
+        <div class="crawl"><Crawl /></div>
+        <div class="penrose-triangle"><Impossible /></div>
+        <div class="penrose-triangle"><Fall /></div>
+      </section>
+
+      <section class="footer">
+        <footer>
+          <!-- break -->
+          <section class="scrolltotop">
+            <div class="">
+              <a href="#top">Scroll to top ↑</a>
+            </div>
+            <div>
+              <p>#Divtober 2023</p>
+              <p>A css drawing project </p>
+              <p>created by Olajide Seun</p>
+           
+            
+            </div>
+          </section>
+        </footer>
+      </section>
+    </section>
+  </main>
+</Layout>
+
+<style>
+  .section1 > div {
+    background-color: black;
+    z-index: -999;
+  }
+
+  .section2 {
+    display: flex;
+
+    & div:first-child {
+      width: 50%;
+      overflow: hidden;
+    }
+
+    & div:nth-child(2) {
+      width: 50%;
+      overflow: hidden;
+      background-color: lightcyan;
+    }
+  }
+
+  .section3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    & div:first-child {
+      overflow: hidden;
+    }
+
+    & div:nth-child(2) {
+      background-color: bisque;
+      overflow: hidden;
+    }
+
+    & div:nth-child(3) {
+      background-color: lightgray;
+      overflow: hidden;
+    }
+  }
+
+  .loadmore {
+    display: flex;
+    justify-content: center;
+    padding: 10vmin 0;
+
+    & div {
+      & button {
+        padding: 16px 30px;
+        background-color: bisque;
+        border: none;
+        color: brown;
+        font-weight: bold;
+        cursor: pointer;
+        border-radius: 30px;
+        font-size: 18px;
+      }
+    }
+  }
+
+  .section5 {
+    display: flex;
+
+    & div:first-child {
+      width: 50%;
+      background-color: salmon;
+    }
+
+    & div:nth-child(2) {
+      width: 50%;
+      background-color: #010101;
+    }
+  }
+
+  .section6 {
+    display: flex;
+
+    & div:first-child {
+      width: 50%;
+      background-color: bisque;
+    }
+
+    & div:nth-child(2) {
+      width: 50%;
+      background-color: darkcyan;
+    }
+  }
+
+  .section7 {
+    background-color: #010101;
+    overflow: hidden;
+  }
+
+  .section8 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    & div:first-child {
+      overflow: hidden;
+      background-color: purple;
+    }
+
+    & div:nth-child(2) {
+      overflow: hidden;
+      background-color: #060606;
+    }
+
+    & div:nth-child(3) {
+      overflow: hidden;
+    }
+  }
+
+  .section10 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    & div:first-child {
+      overflow: hidden;
+    }
+
+    & div:nth-child(2) {
+      overflow: hidden;
+    }
+
+    & div:nth-child(3) {
+      overflow: hidden;
+    }
+  }
+
+  .section11 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    & div:first-child {
+      background-color: bisque;
+      overflow: hidden;
+    }
+
+    & div:nth-child(2) {
+      background-color: palevioletred;
+      overflow: hidden;
+    }
+
+    & div:nth-child(3) {
+      background-color: lightgreen;
+      overflow: hidden;
+    }
+  }
+
+  .andmore {
+    display: flex;
+    justify-content: center;
+    padding: 10vmin 0;
+
+    & div {
+      & button {
+        padding: 16px 30px;
+        background-color: bisque;
+        border: none;
+        color: brown;
+        font-weight: bold;
+        cursor: pointer;
+        border-radius: 30px;
+        font-size: 18px;
+      }
+    }
+  }
+
+  .scrolltotop {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    padding: 10vmin 0;
+    background-color: #010101;
+
+    & div:first-child {
+      & a {
+        padding: 16px 30px;
+        background-color: bisque;
+        border: none;
+        color: brown;
+        font-weight: bold;
+        cursor: pointer;
+        border-radius: 30px;
+        font-size: 18px;
+        text-decoration: none;
+      }
+    }
+
+    & div:nth-child(2) {
+      & p {
+        text-align: center;
+        margin-bottom: 1.5rem;
+        font-size: 18px;
+        color: #c4c4c4;
+      }
+    }
+  }
+
+  .tangled {
+    background-color: lightblue;
+    overflow: hidden;
+  }
+
+  .lost {
+    background-color: #010101;
+    overflow: hidden;
+  }
+
+  .section4 {
+    display: none;
+  }
+
+  .section9 {
+    display: none;
+  }
+
+  .show {
+    display: block;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  @media screen and (max-width: 800px) {
+    .section2 {
+      display: flex;
+      flex-direction: column;
+
+      & div:first-child {
+        width: 100%;
+        overflow: hidden;
+      }
+
+      & div:nth-child(2) {
+        width: 100%;
+        overflow: hidden;
+        background-color: lightcyan;
+      }
+    }
+
+    .section3 {
+      display: grid;
+      grid-template-columns: 1fr;
+
+      & div:nth-child(3) {
+        background-color: lightgray;
+        overflow: hidden;
+      }
+    }
+
+    .section4 {
+
+
+  }
+
+    .section5 {
+      display: flex;
+      flex-direction: column;
+
+      & div:first-child {
+        width: 100%;
+        overflow: hidden;
+      }
+
+      & div:nth-child(2) {
+        width: 100%;
+        overflow: hidden;
+      }
+    }
+
+    .section6 {
+      display: flex;
+      flex-direction: column;
+
+      & div:first-child {
+        width: 100%;
+        overflow: hidden;
+      }
+
+      & div:nth-child(2) {
+        width: 100%;
+        overflow: hidden;
+      }
+    }
+
+    .section8 {
+      display: grid;
+      grid-template-columns: 1fr;
+  }
+
+  .section10 {
+      display: grid;
+      grid-template-columns: 1fr;
+  }
+
+  .section11 {
+      display: grid;
+      grid-template-columns: 1fr;
+  }
+
+
+  .tangled {
+    background-color: lightblue;
+    width: 100%;
+  }
+</style>
+
+<script>
+  const btn = document.querySelector(".loadmore div button");
+  const section = document.querySelector(".section4");
+  const loadmore = document.querySelector(".loadmore");
+  const andmore = document.querySelector(".andmore");
+  const morebtn = document.querySelector(".andmore div button");
+  const moresection = document.querySelector(".section9");
+
+  btn?.addEventListener("click", () => {
+    section?.classList.add("show");
+    loadmore?.classList.add("hidden");
+  });
+
+  morebtn?.addEventListener("click", () => {
+    moresection?.classList.add("show");
+    andmore?.classList.add("hidden");
+  });
+</script>
