@@ -64,11 +64,18 @@ import Github from "../../public/github.svg";
     <footer class="footer">
       <!-- <p>Authored by olajide seun</p> -->
       <div class="footer-icons">
-        <span>
+        <a>
           <Image src={LinkedIn} alt="a double music note icon" width={40} height={40} />
-        </span>
-        <span><Image src={Github} alt="a double music note icon" width={40} height={40} /></span>
-        <span><Image src={Mail} alt="a double music note icon" width={40} height={40} /></span>
+          <span></span>
+        </a>
+        <a>
+          <Image src={Github} alt="a double music note icon" width={40} height={40} />
+          <span></span>
+        </a>
+        <a>
+          <Image src={Mail} alt="a double music note icon" width={40} height={40} />
+          <span></span>
+        </a>
       </div>
     </footer>
   </div>
@@ -175,7 +182,12 @@ import Github from "../../public/github.svg";
   }
 
   .link-buttons button:nth-child(1) {
-    background-color: black;
+    background-color: #0086b3;
+    color: white;
+  }
+
+  .link-buttons button:nth-child(2) {
+    background-color: salmon;
     color: white;
   }
 
@@ -252,15 +264,47 @@ import Github from "../../public/github.svg";
     background-color: black;
     display: flex;
     gap: 8px;
+    position: relative;
   }
 
-  .footer-icons span {
+  .footer-icons a {
     border-radius: 10px;
     display: inline-block;
     padding: 2px;
     background-color: white;
     place-content: center;
     place-items: center;
+    z-index: 1;
+    transform: translateY(0px);
+    transition: transform 0.5s ease-in-out;
+    cursor: pointer;
+  }
+
+  .footer-icons a > span {
+    position: absolute;
+    bottom: 0;
+    left: 40%;
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 999px;
+    z-index: -1;
+  }
+
+  .footer-icons a:hover > span {
+    transform: translateY(20px);
+    transition:
+      transform,
+      0.5s ease-in-out;
+  }
+
+  .footer-icons a:hover {
+    transform: translateY(-20px);
+    background-color: white;
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    outline: 3px solid black;
   }
 
   @media screen and (max-width: 800px) {
