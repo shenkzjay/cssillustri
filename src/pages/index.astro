@@ -3,239 +3,367 @@ import { Image } from "astro:assets";
 import Music from "../components/arts/music.astro";
 import Layout from "../layouts/Layout.astro";
 import SubZero from "../components/arts/subzero.astro";
+import SingleNote from "../../public/musicnote.svg";
+import DoubleNote from "../../public/doublenote.svg";
+import StarIcon from "../../public/starIcon.svg";
+import LinkedIn from "../../public/linkendinIcon.svg";
+import Mail from "../../public/mailIcon.svg";
+import Github from "../../public/github.svg";
 ---
 
 <Layout title="home">
-  <section class="bg-wrapper">
-    <section class="title-wrap">
-      <div class="title-head">
-        <div class="header-txt">
-          <h1>CSS</h1>
-          <h1>CREATIONS</h1>
-          <p>Unlocking the fun part of CSS!!!</p>
-          <div class="link-buttons">
-            <div class="btn">
-              <button>
-                <a href="https://www.csscanvas.com" aria-label="website link">
-                  <p class="btntext1">View css arts</p>
-                  <p class="btntext2">View css arts</p>
-                </a>
-              </button>
+  <div>
+    <section class="bg-wrapper">
+      <section class="title-wrap">
+        <div class="title-head">
+          <div class="header-txt">
+            <h1>CSS</h1>
+            <h1>CREATIONS</h1>
+            <p>Unlocking the fun part of CSS!!!</p>
+            <div class="link-buttons">
+              <div class="btn">
+                <button>
+                  <a href="/cssarts" aria-label="website link">
+                    <p class="btntext1">View css arts</p>
+                    <p class="btntext2">View css arts</p>
+                  </a>
+                </button>
+              </div>
+              <button>View other projects</button>
             </div>
-            <button>View other projects</button>
           </div>
-        </div>
-        <div class="musicart">
-          <div>
+          <div class="musicart">
             <Music />
+            <span class="music-icon1">
+              <Image src={SingleNote} alt="a single music note icon" />
+            </span>
+            <span class="music-icon2">
+              <Image src={DoubleNote} alt="a double music note icon" /></span
+            >
+            <span class="music-icon3">
+              <Image
+                src="https://img.icons8.com/ios-filled/50/treble-clef.png"
+                alt="treble clef icon"
+                width={50}
+                height={50}
+              />
+            </span>
+            <span class="staricon1">
+              <Image src={StarIcon} alt="a double music note icon" />
+            </span>
+            <span class="staricon2">
+              <Image src={StarIcon} alt="a double music note icon" />
+            </span>
+            <!-- <span class="staricon3">
+            <Image src={StarIcon} alt="a double music note icon" />
+          </span> -->
           </div>
-
-          <!-- <div>
-            <SubZero />
-          </div> -->
         </div>
-      </div>
+      </section>
     </section>
+    <footer class="footer">
+      <!-- <p>Authored by olajide seun</p> -->
+      <div class="footer-icons">
+        <span>
+          <Image src={LinkedIn} alt="a double music note icon" width={40} height={40} />
+        </span>
+        <span><Image src={Github} alt="a double music note icon" width={40} height={40} /></span>
+        <span><Image src={Mail} alt="a double music note icon" width={40} height={40} /></span>
+      </div>
+    </footer>
+  </div>
+</Layout>
 
-    <style>
-      .musicart {
-        position: relative;
+<style>
+  .bg-wrapper {
+    width: 100vw;
+    height: 92vh;
+    display: grid;
+    grid-template-columns: repeat(12, calc(100vw / 12));
+    grid-template-rows: repeat(6, calc(100vw / 12));
+    background-size: calc(100vw / 12) calc(100vw / 12);
+    /* background-image: linear-gradient(white, white); */
+    background-image: linear-gradient(to right, #f8f8f8 1px, transparent 1px),
+      linear-gradient(to bottom, #f4f4f4 1px, transparent 1px);
+    z-index: -1;
+  }
+  .title-wrap {
+    position: relative;
+  }
 
-        overflow: hidden;
-        transform: scale(-1, 1);
-      }
+  .header-txt {
+    width: 50%;
+    margin-left: 100px;
+  }
 
-      .title-wrap {
-        position: relative;
-      }
+  .title-head {
+    /* transform: translate(-50%, -100%); */
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    mix-blend-mode: multiply;
+  }
 
-      .header-txt {
-        width: 50%;
-        margin-left: 100px;
-      }
+  .link-buttons {
+    display: flex;
+    gap: 20px;
+    margin-top: 2rem;
+  }
 
-      .title-head {
-        /* transform: translate(-50%, -100%); */
-        width: 100vw;
-        height: 100vh;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        mix-blend-mode: multiply;
-      }
+  .link-buttons .btn {
+    display: flex;
+    flex-flow: column;
+  }
 
-      .link-buttons {
-        display: flex;
-        gap: 20px;
-        margin-top: 2rem;
-      }
+  .link-buttons .btn > button {
+    padding: 16px 18px;
+    border-radius: 9999px;
+    outline: none;
+    border: none;
+    font-weight: 700;
+    font-size: 18px;
+    width: 100%;
+    cursor: pointer;
+  }
 
-      .link-buttons .btn {
-        display: flex;
-        flex-flow: column;
-      }
+  .link-buttons .btn > button:hover a p:nth-child(1) {
+    transform: translateY(-100px);
+    text-wrap: nowrap;
+    transition: transform 1s ease-in-out;
+  }
 
-      .link-buttons .btn > button {
-        padding: 16px 18px;
-        border-radius: 9999px;
-        outline: none;
-        border: none;
-        font-weight: 700;
-        font-size: 18px;
-        width: 100%;
-        cursor: pointer;
-      }
+  .link-buttons .btn > button:hover a p:nth-child(2) {
+    transform: translateY(0px);
+    text-wrap: nowrap;
+    transition: transform 0.3s ease-in-out;
+  }
 
-      .link-buttons .btn > button:hover a p:nth-child(1) {
-        transform: translateY(-100px);
-        text-wrap: nowrap;
-        transition: transform 1s ease-in-out;
-      }
+  .link-buttons .btn > button a {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    text-decoration: none;
+  }
 
-      .link-buttons .btn > button:hover a p:nth-child(2) {
-        transform: translateY(0px);
-        text-wrap: nowrap;
-        transition: transform 0.3s ease-in-out;
-      }
+  .link-buttons .btn > button a p:nth-child(1) {
+    transform: translateY(0px);
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    transition: transform 0.3s ease-in-out;
+    font-weight: 600;
+  }
 
-      .link-buttons .btn > button a {
-        position: relative;
-        overflow: hidden;
-        display: flex;
-        flex-direction: column;
-        color: white;
-        text-decoration: none;
-      }
+  .link-buttons .btn > button a p:nth-child(2) {
+    transform: translateY(100%);
+    transition: transform 0.3s ease-in-out;
+  }
 
-      .link-buttons .btn > button a p:nth-child(1) {
-        transform: translateY(0px);
-        position: absolute;
-        z-index: 1;
-        top: 0;
-        left: 0;
-        transition: transform 0.3s ease-in-out;
-        font-weight: 600;
-      }
+  .link-buttons > button {
+    padding: 16px 18px;
+    border-radius: 9999px;
+    outline: none;
+    border: none;
+    font-weight: 700;
+    font-size: 18px;
+  }
 
-      .link-buttons .btn > button a p:nth-child(2) {
-        transform: translateY(100%);
-        transition: transform 0.3s ease-in-out;
-      }
+  .link-buttons button:nth-child(1) {
+    background-color: black;
+    color: white;
+  }
 
-      .link-buttons > button {
-        padding: 16px 18px;
-        border-radius: 9999px;
-        outline: none;
-        border: none;
-        font-weight: 700;
-        font-size: 18px;
-      }
+  .title-head h1 {
+    font-size: clamp(2.5rem, 7vw, 7rem);
+    margin:;
+    color: black;
+    background-clip: text;
+    background-color: rgba(255, 255, 255, 0.8);
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
 
-      .link-buttons button:nth-child(1) {
-        background-color: black;
-        color: white;
-      }
+  .musicart {
+    position: relative;
+    border-radius: 0 0 999px;
+    overflow: hidden;
+  }
 
-      .title-head h1 {
-        font-size: clamp(2.5rem, 7vw, 5rem);
-        margin:;
-        color: black;
-        background-clip: text;
-        background-color: rgba(255, 255, 255, 0.8);
+  .music-icon1,
+  .music-icon2,
+  .music-icon3,
+  .staricon1,
+  .staricon2,
+  .staricon3 {
+    position: absolute;
+  }
 
-        text-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-      }
+  .music-icon1 {
+    transform: scale(3) translate(50px, 50px);
+    animation: musicnotes 3s linear infinite;
+    top: 0;
+    left: 0;
+  }
 
-      .bg-wrapper {
-        width: 100vw;
-        height: 100vh;
-        display: grid;
-        grid-template-columns: repeat(12, calc(100vw / 12));
-        grid-template-rows: repeat(6, calc(100vw / 12));
-        background-size: calc(100vw / 12) calc(100vw / 12);
-        /* background-image: linear-gradient(white, white); */
-        background-image: linear-gradient(to right, #f8f8f8 1px, transparent 1px),
-          linear-gradient(to bottom, #f4f4f4 1px, transparent 1px);
-        z-index: -1;
-      }
+  .music-icon2 {
+    transform: scale(3) translate(100px, 40px);
+    z-index: -1;
+    animation: musicnotes2 3s 300ms linear infinite;
+    top: 0rem;
+    left: 3rem;
+  }
 
-      @media screen and (max-width: 800px) {
-        .title-head {
-          /* transform: translate(-50%, -100%); */
+  .music-icon3 {
+    transform: scale(2) translate(150px, 0px);
+    z-index: -1;
+    animation: musicnotes3 2.5s 300ms linear infinite;
+    top: 12rem;
+    left: 0;
+  }
 
-          display: flex;
-          flex-direction: column;
-          height: 100vh;
-          justify-content: center;
-          align-items: center;
-        }
+  .staricon1 {
+    bottom: 10rem;
+    left: 5rem;
+    animation: starburst 3s linear infinite;
+  }
 
-        .header-txt {
-          width: 100%;
-          margin-left: 0px;
-          display: flex;
-          flex-direction: column;
-        }
+  .staricon2 {
+    top: 12rem;
+    right: 10rem;
+    animation: starburst 3s 1000ms linear infinite;
+  }
 
-        .link-buttons .btn {
-          display: flex;
-          flex-flow: column;
-        }
+  .footer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
 
-        .link-buttons {
-          display: flex;
-          flex-direction: column;
+  .footer-icons {
+    padding: 8px;
+    border-radius: 15px;
+    background-color: black;
+    display: flex;
+    gap: 8px;
+  }
 
-          gap: 20px;
+  .footer-icons span {
+    border-radius: 10px;
+    display: inline-block;
+    padding: 2px;
+    background-color: white;
+    place-content: center;
+    place-items: center;
+  }
 
-          margin: 2rem;
-        }
-        .link-buttons .btn > button {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
+  @media screen and (max-width: 800px) {
+    .title-head {
+      /* transform: translate(-50%, -100%); */
 
-        .title-head h1,
-        .title-head p {
-          display: flex;
-          justify-content: center;
-        }
-      }
-    </style>
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+      justify-content: center;
+      align-items: center;
+    }
 
-    <script>
-      const gridContainer = document.querySelector(".bg-wrapper");
+    .header-txt {
+      width: 100%;
+      margin-left: 0px;
+      display: flex;
+      flex-direction: column;
+    }
 
-      for (let i = 0; i <= 144; i++) {
-        const gridItem = document.createElement("div");
-        gridItem.classList.add("gridItem");
+    .link-buttons .btn {
+      display: flex;
+      flex-flow: column;
+    }
 
-        gridContainer?.appendChild(gridItem);
-      }
+    .link-buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      margin: 2rem;
+    }
+    .link-buttons .btn > button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
 
-      function addRandomBoxShadow(numOfItems: number) {
-        const items = document.querySelectorAll(".gridItem");
+    .title-head h1,
+    .title-head p {
+      display: flex;
+      justify-content: center;
+    }
+  }
 
-        const totalItems = items.length;
+  @keyframes musicnotes {
+    to {
+      transform: scale(0) translate(0, 0);
+    }
+  }
 
-        numOfItems = Math.min(numOfItems, totalItems);
+  @keyframes musicnotes2 {
+    to {
+      transform: scale(0) translate(150px, 0);
+    }
+  }
 
-        const randomIndices: Set<number> = new Set();
+  @keyframes musicnotes3 {
+    to {
+      transform: scale(0) translate(0px, 0);
+    }
+  }
 
-        while (randomIndices.size < numOfItems) {
-          const randomIndex = Math.floor(Math.random() * totalItems);
-          randomIndices.add(randomIndex);
-        }
+  @keyframes starburst {
+    0%,
+    100% {
+      transform: scale(0.3);
+    }
 
-        for (let index of randomIndices) {
-          items[index].classList.add("shadow");
-          items[index].setAttribute("style", "  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08)");
-        }
-      }
+    50% {
+      transform: scale(1.5);
+    }
+  }
+</style>
 
-      addRandomBoxShadow(50);
-    </script>
-  </section></Layout
->
+<script>
+  const gridContainer = document.querySelector(".bg-wrapper");
+
+  for (let i = 0; i <= 144; i++) {
+    const gridItem = document.createElement("div");
+    gridItem.classList.add("gridItem");
+
+    gridContainer?.appendChild(gridItem);
+  }
+
+  function addRandomBoxShadow(numOfItems: number) {
+    const items = document.querySelectorAll(".gridItem");
+
+    const totalItems = items.length;
+
+    numOfItems = Math.min(numOfItems, totalItems);
+
+    const randomIndices: Set<number> = new Set();
+
+    while (randomIndices.size < numOfItems) {
+      const randomIndex = Math.floor(Math.random() * totalItems);
+      randomIndices.add(randomIndex);
+    }
+
+    for (let index of randomIndices) {
+      items[index].classList.add("shadow");
+      items[index].setAttribute("style", "  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08)");
+    }
+  }
+
+  addRandomBoxShadow(50);
+</script>

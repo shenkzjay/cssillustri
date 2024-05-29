@@ -2,33 +2,31 @@
 import CardLayout from "./cardLayout.astro";
 ---
 
-<CardLayout title="Music" hrefname="https://codepen.io/Olajide-Seun/pen/MWZPovG">
+<CardLayout title="Music" hrefname="#">
   <section class="artcss">
     <div class="facetop">
       <div>
         <div class="brows">
-          <div>
-            <div class="capfront_top"></div>
-            <div class="capfront"></div>
-            <div class="cap"></div>
-            <div class="earpiece"></div>
-            <div class="earpiece_bud"></div>
-            <div class="earpiece_antenna"></div>
-            <div class="beardcurve"></div>
-            <div class="ribbons"></div>
-            <div class="ribbonsleft"></div>
-            <div class="neck"></div>
-            <div class="shirt"></div>
-            <div class="hair"></div>
-            <div class="eyebrows"></div>
-            <div class="beard"><div></div></div>
-          </div>
+          <div class="capfront_top"></div>
+          <div class="capfront"></div>
+          <div class="cap"></div>
+          <div class="earpiece"></div>
+          <div class="earpiece_bud"></div>
+          <div class="earpiece_antenna"></div>
+          <div class="beardcurve"></div>
+          <div class="ribbons"></div>
+          <div class="ribbonsleft"></div>
+          <div class="eyebrows"></div>
+          <div class="neck"></div>
+          <div class="shirt"></div>
+          <div class="beard"></div>
+          <div class="hair"></div>
         </div>
       </div>
     </div>
-    <div>Hello</div>
   </section>
 </CardLayout>
+<div></div>
 
 <style>
   .artcss {
@@ -36,12 +34,14 @@ import CardLayout from "./cardLayout.astro";
     height: 80vmin;
     margin: 0vmin auto;
     position: relative;
+    transform: scale(-1, 1);
   }
 
   .facetop {
     width: 100%;
     height: 100%;
     position: relative;
+    animation: slownod 3s alternate infinite;
   }
 
   /*really don't know why i use pseudo class here, but you can always use another element*/
@@ -439,5 +439,12 @@ import CardLayout from "./cardLayout.astro";
     /*     linear-gradient(45deg, darkred 50%, transparent 50.5%)  88% 100% / 37vmin 30vmin; */
     background-repeat: no-repeat;
     z-index: -999;
+  }
+
+  @keyframes slownod {
+    to {
+      transform: rotate(3deg);
+      /* transition: transform 0.5s ease-in-out; */
+    }
   }
 </style>
