@@ -24,16 +24,19 @@ import Github from "../../public/github.svg";
               <div class="btn">
                 <button>
                   <a href="/cssarts" aria-label="website link">
-                    <p class="btntext1">View css arts</p>
-                    <p class="btntext2">View css arts</p>
+                    <p class="btntext1">View Css Arts</p>
+                    <p class="btntext2">View Css Arts</p>
                   </a>
                 </button>
               </div>
-              <button>View other projects</button>
+              <button>View other Projects</button>
             </div>
           </div>
           <div class="musicart">
-            <Music />
+            <div class="css-art">
+              <Music />
+            </div>
+            <p>Credits: illustration by @daviowhite</p>
             <span class="music-icon1">
               <Image src={SingleNote} alt="a single music note icon" />
             </span>
@@ -207,8 +210,19 @@ import Github from "../../public/github.svg";
 
   .musicart {
     position: relative;
-    border-radius: 0 0 999px;
+    pointer-events: none;
+  }
+
+  .musicart > .css-art {
+    border-radius: 0 0 999px 999px;
     overflow: hidden;
+  }
+
+  .musicart > p:first-of-type {
+    text-align: center;
+    font-style: italic;
+    color: gray;
+    font-size: 12px;
   }
 
   .music-icon1,
@@ -351,6 +365,10 @@ import Github from "../../public/github.svg";
     .title-head p {
       display: flex;
       justify-content: center;
+    }
+
+    .footer-icons {
+      margin-top: 30px;
     }
   }
 
